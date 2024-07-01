@@ -17,33 +17,26 @@
       <div class="offcanvas-body" id="offcanva">
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="#homepage">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#aboutpage">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Skills</a>
+            <a class="nav-link" href="#resumepage">Resume</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Resume</a>
+            <a class="nav-link" href="#projectspage">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Testimonials</a>
+            <a class="nav-link" href="#testimonialspage">Testimonials</a>
           </li>
           
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <li class="nav-item ">
+            <a class="nav-link " href="#contactpage">
               Reach Out
             </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Socials</a></li>
-              <li><a class="dropdown-item" href="#">Email</a></li>
-              
-            </ul>
+            
           </li>
         </ul>
         <form class="d-flex mt-3" role="search">
