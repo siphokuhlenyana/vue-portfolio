@@ -1,26 +1,55 @@
 <template>
  
 <nav-bar-comp/>
-<section class="row" id="homepage">
-  <home-view/>
+<section id="homepage">
+   <home-view/>
 </section>
-<section class="row" id="aboutpage">
-  <about-comp/>
+ <section id="aboutpage">
+    <about-comp/>
+ </section>
+<section id="resumepage">
+   <resume-comp/>
 </section>
+<section id="testimonials">
+    <testimonials-comp/>
+</section>
+<section id="projectspage">
+  <projects-comp/>
+</section>
+<section id="contactpage">
+  <contact-comp/>
+</section>
+  
+<footer-comp/>
+
 
 
 
 </template>
 <script>
+import HomeView from './views/HomeView.vue'
 import AboutComp from './components/AboutComp.vue'
+import ContactComp from './components/ContactComp.vue'
+import FooterComp from './components/FooterComp.vue'
 import NavBarComp from './components/NavBarComp.vue'
+import ProjectsComp from './components/ProjectsComp.vue'
+import ResumeComp from './components/ResumeComp.vue'
+import TestimonialsComp from './components/TestimonialsComp.vue'
+
+
 
 export default{
   components:{
-   NavBarComp
+   NavBarComp,
+   AboutComp,
+  ResumeComp,
+  TestimonialsComp,
+  ProjectsComp,
+  ContactComp,
+    FooterComp,
+    HomeView
   }
 }
-
 
 
 
@@ -33,6 +62,7 @@ export default{
 <style>
 *{
   margin: 0px;
+  /* width:100% */
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -42,16 +72,5 @@ export default{
   color: #2c3e50;
 }
 
-nav {
-  padding: 30px;
-}
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
-}
 </style>
