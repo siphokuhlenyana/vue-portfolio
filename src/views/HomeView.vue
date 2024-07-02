@@ -1,16 +1,36 @@
 <template>
-  
+    <div class="container-fluid">
+      <section class="row" id="homepage">
+        <HomeComp/>
+      </section>
+      <section class="row" id="aboutpage">
+        <AboutComp/>
+      </section>
+      <section class="row" id="resumepage">
+        <ResumeComp/>
+      </section>
+      <section class="row" id="testimonials">
+        <TestimonialsComp/>
+      </section>
+      <section class="row" id="projectspage">
+        <ProjectsComp/>
+      </section>
+      <section class="row" id="contactpage">
+        <ContactComp/>
+      </section>
+    </div>
+
     <!-- <section class="row" id="navbar">
       <nav-bar-comp/>
     </section> -->
     
-    <div class="home">
+    <!-- <div class="home"> -->
    <!-- <h1 id="hi">SIPHOKUHLE NYANA </h1> -->
      
-      <img id="kuhle" src="https://github.com/siphokuhlenyana/ImagesPortfolio/blob/main/MYPIC.jpg?raw=true" alt="" width="420px" :style="{borderRadius:'10%',borderWidth:'25px',borderStyle:'solid',borderColor:'#33051c'}">
-      <img id="sipho"  src="https://github.com/siphokuhlenyana/ImagesPortfolio/blob/main/MYPIC.jpg?raw=true" alt="" width="350px" height="300px" :style="{borderRadius:'10%',borderWidth:'20px',borderStyle:'solid',borderColor:'#33051c'}">
+      <!-- <img id="kuhle" src="https://github.com/siphokuhlenyana/ImagesPortfolio/blob/main/MYPIC.jpg?raw=true" alt="" width="420px" :style="{borderRadius:'10%',borderWidth:'25px',borderStyle:'solid',borderColor:'#33051c'}">
+      <img id="sipho"  src="https://github.com/siphokuhlenyana/ImagesPortfolio/blob/main/MYPIC.jpg?raw=true" alt="" width="350px" height="300px" :style="{borderRadius:'10%',borderWidth:'20px',borderStyle:'solid',borderColor:'#33051c'}"> -->
       <!-- <img id="horoscope" src="https://pngimg.com/d/capricorn_PNG35.png" alt="" width="250px" height="150px"> -->
-      <home-comp-vue/>
+      <!-- <home-comp-vue/>
       <button type="button" class="btn btn-outline-secondary" :style="{backgroundColor:'#fa5ee2'}">Download Resume</button><br>
      <div class="socials">
        <div id="1"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
@@ -25,7 +45,7 @@
       <div id="text-intro"  :style="{borderColor:'#fa5ee2',borderWidth:'2px',borderStyle:'dotted',boxShadow:'16px 16px 25px #fa5ee2',borderRadius:'10px '}"><h2 >Hi👋,<br> I am  a Software Designer & Developer <br>have a look on my portfolio ...</h2></div>
        </div>
         </div>
-        
+         -->
         <!-- <svg id="caret" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16">
     <path d="M3.204 5h9.592L8 10.481zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659"/>
   </svg> -->
@@ -55,14 +75,22 @@
 </template>
 
 <script>
-// @ is an alias to /src
-
-
+import HomeComp from '@/components/HomeComp.vue';
+import AboutComp from '@/components/AboutComp.vue';
+import ResumeComp from '@/components/ResumeComp.vue';
+import TestimonialsComp from '@/components/TestimonialsComp.vue';
+import ProjectsComp from '@/components/ProjectsComp.vue';
+import ContactComp from '@/components/ContactComp.vue';
 
 export default {
   name: 'HomeView',
   components: {
-    
+    HomeComp,
+    AboutComp,
+    ResumeComp,
+    TestimonialsComp,
+    ProjectsComp,
+    ContactComp
   }
 }
 </script>

@@ -1,5 +1,5 @@
 <template>
- 
+<!--  
 <nav-bar-comp/>
 <section id="homepage">
    <home-view/>
@@ -21,33 +21,31 @@
 </section>
   
 <footer-comp/>
-
-
+ -->
+  <div class="wrapper">
+    <NavBarComp/>
+    <main >
+      <SpinnerComp/>
+      <router-view/>
+    </main>
+    <FooterComp/>
+  </div>
 
 
 </template>
 <script>
-import HomeView from './views/HomeView.vue'
-import AboutComp from './components/AboutComp.vue'
-import ContactComp from './components/ContactComp.vue'
 import FooterComp from './components/FooterComp.vue'
 import NavBarComp from './components/NavBarComp.vue'
-import ProjectsComp from './components/ProjectsComp.vue'
-import ResumeComp from './components/ResumeComp.vue'
-import TestimonialsComp from './components/TestimonialsComp.vue'
+import SpinnerComp  from './components/SpinnerComp.vue';
 
 
 
 export default{
   components:{
    NavBarComp,
-   AboutComp,
-  ResumeComp,
-  TestimonialsComp,
-  ProjectsComp,
-  ContactComp,
     FooterComp,
-    HomeView
+    SpinnerComp
+
   }
 }
 
@@ -70,6 +68,10 @@ export default{
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+.wrapper {
+  display: grid;
+  grid-template-rows: auto minmax(100dvh, 100%) auto;
 }
 
 
