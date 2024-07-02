@@ -7,6 +7,7 @@ export default createStore({
    workExperience:null,
    projects:null,
    education:null,
+   testimonials:null
    
 
   },
@@ -28,6 +29,9 @@ export default createStore({
     },
     setEducation(state ,hohoho){
       state.education=hohoho
+    },
+    setTestimonials(state,hohoho){
+      state.testimonials=hohoho
     }
   },
   actions: {
@@ -60,7 +64,13 @@ export default createStore({
     let converted =await fetchedInfo.json()
     console.log(converted);
     context.commit('setWorkExperience',converted.workExp)
-    }
+    },
+    async getTestimonials(context){
+      let fetchedInfo= await fetch('https://siphokuhlenyana.github.io/portdata/data.json')
+    let converted =await fetchedInfo.json()
+    console.log(converted);
+    context.commit('setTestimonials',converted.testimonials)
+    },
   },
   modules: {
   }

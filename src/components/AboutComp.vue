@@ -38,7 +38,7 @@ export default {
     background-color: #33051cf9 ;
     text-align: center;
     color: #fad0f9;
-    height: 100vh;
-    padding-top: 8%;
+    height: 105vh;
+    padding-top: 7%;
 }
 </style>
