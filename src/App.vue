@@ -24,6 +24,7 @@
  -->
   <div class="wrapper">
     <NavBarComp/>
+    
     <main >
       <SpinnerComp/>
       <router-view/>

@@ -2,6 +2,7 @@
     <div class="container-fluid">
       <section class="row" id="homepage">
         <HomeComp/>
+       
       </section>
       <section class="row" id="aboutpage">
         <AboutComp/>
@@ -69,7 +70,7 @@
   </section>
    -->
 
-    
+   
   
  
 </template>
@@ -82,6 +83,7 @@ import TestimonialsComp from '@/components/TestimonialsComp.vue';
 import ProjectsComp from '@/components/ProjectsComp.vue';
 import ContactComp from '@/components/ContactComp.vue';
 
+
 export default {
   name: 'HomeView',
   components: {
@@ -91,6 +93,7 @@ export default {
     TestimonialsComp,
     ProjectsComp,
     ContactComp
+    
   }
 }
 </script>
