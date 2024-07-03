@@ -26,7 +26,7 @@
     <NavBarComp/>
     
     <main >
-      <SpinnerComp/>
+      <!-- <SpinnerComp/> -->
       <router-view/>
     </main>
     <FooterComp/>
@@ -37,15 +37,15 @@
 <script>
 import FooterComp from './components/FooterComp.vue'
 import NavBarComp from './components/NavBarComp.vue'
-import SpinnerComp  from './components/SpinnerComp.vue';
+// import SpinnerComp  from './components/SpinnerComp.vue';
 
 
 
 export default{
   components:{
    NavBarComp,
-    FooterComp,
-    SpinnerComp
+    FooterComp
+    // SpinnerComp
 
   }
 }

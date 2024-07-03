@@ -1,25 +1,30 @@
 <template lang="">
-    <div>
-        <h1 >Reviews</h1>
-        <div id="test"  >
-  <div  class="row row-cols-1 row-cols-md-3 g-4" >
-    <div class="card" v-for="testimonial in testimonialsData" :key="testimonial.name" >
-      <img :src="testimonial.image" class="card-img-top" alt="" >
-      <div class="card-body">
-        <h2 class="card-title">{{testimonial.name}} {{testimonial.surname}} </h2>
-        <p class="card-text">{{testimonial.description}}</p>
-      </div>
+       <h1 class="display-2" :style="{color:'black'}">Reviews</h1>
+    <div class="d-flex justify-content-center">
+        
+     
+
+        <div class="container" id="container">
+        <!-- <div class="col gap-2 justify-content-center "> -->
+            <div class="card" v-for="testimonial in testimonialsData" :key="testimonial.name" :style="{backgroundColor:'#0a0406',color:'#fad0f9',}">
+                <h3 >{{ testimonial.name }} {{testimonial.surname }}</h3>
+                <img :src="testimonial.image" width="200px" height="200px" class="mx-auto">
+              <span>{{testimonial.description}}</span>
+            </div>
+        </div>
     </div>
-  </div>
-  
-    </div>
-  </div>
+
+<!-- </div> -->
   
 
 
 </template>
 <script>
+
 export default {
+    component:{
+
+    },
     computed:{
        
        testimonialsData()
@@ -36,8 +41,16 @@ export default {
     /* #test{
        display: grid;
       grid-template-columns: repeat ( 2,1fr);
-      gap:30px; 
+      gap:30px;  
       width:100%;
-      height:150px;
+      height:10px;
     } */
+     #container{
+
+        display: grid;
+        grid-template-columns: repeat (3,1fr);
+       justify-content: center;
+
+       gap: 10px;
+     }
 </style>

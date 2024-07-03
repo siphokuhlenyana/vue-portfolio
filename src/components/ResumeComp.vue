@@ -2,13 +2,13 @@
     <div id="container">
         <h1 class="display-2" :style="{marginTop:'40px'}">Education</h1>
         <div id="data">
-            <div id="education" v-for="education in educationData" :key="education.placeOfInstitution" :style="{borderWidth:'5px',borderColor:'#a300a3',
+            <div id="education" v-for="education,  in educationData" :key="education.placeOfInstitution" :style="{borderWidth:'5px',borderColor:'#a300a3',
         borderStyle:'solid',borderRadius:'50%',
         backgroundImage:'url(https://www.right-to-education.org/sites/right-to-education.org/files/rm373batch13-081_0.jpg)',backgroundRepeat:'no repeat',backgroundSize:'cover'}">
             <h3 id="edu">{{education.placeOfInstitution}} </h3>
             <h2>{{education.year}}</h2>
-            <button v-if="createView === false" @click="createViewIf()" :id="``">View</button>
-           <button v-if="createView" @click="createViewIf()" id="">Hide </button>
+            <button id="view" v-if="createView === false" @click="createViewIf()" >View</button>
+           <button id="hide" v-if="createView" @click="createViewIf()">Hide </button>
            <div id="view" >
             
      <div v-show="createView" :style="{borderWidth:'5px',borderColor:'#a300a3',
@@ -25,7 +25,7 @@
 </div>
        <!-- <img id='agile' src="https://siphokuhlenyana.github.io/Vue_projectImages/Screenshot%202024-06-25%20092556.png" width='300px' height='300px'>      -->
         </div></div>
-        <h1 class="display-2" :style="{color:'black'}">Skills</h1>
+        <h1 class="display-2" :style="{color:'black',marginTop:'10px'}">Skills</h1>
      
         <div id="indication"><h2 :style="{color:'#91074a'}">   <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-chat-quote" viewBox="0 0 16 16">
   <path d="M2.678 11.894a1 1 0 0 1 .287.801 11 11 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8 8 0 0 0 8 14c3.996 0 7-2.807 7-6s-3.004-6-7-6-7 2.808-7 6c0 1.468.617 2.83 1.678 3.894m-.493 3.905a22 22 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a10 10 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9 9 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105"/>
@@ -39,7 +39,7 @@
         </div> 
            </div>
 
-        <h1 class="display-2"  >Work Experience</h1>
+        <h1 class="display-2" :style="{marginTop:'20px',color:'black'}" >Work Experience</h1>
         
         <!-- <div id="carouselExample" class="carousel slide">
         <div id="workExperience" v-for="workExp in workExpData" :key="workExp.placeOfWork">
@@ -49,19 +49,22 @@
 
     <div id="carouselExample" class="carousel slide">
   <div class="carousel-inner">
-    <div class="carousel-item active" v-for="workExp in workExpData" :key="workExp.placeOfWork" :style="{backgroundImage:`url(${workExp.image})`,backgroundSize:'cover',backgroundRepeat:'no repeate'}">
-      <img src="" class="" alt="" >
+    <div class="carousel-item" :class="{active: workExp.id == 1}"  v-for="workExp in workExpData" :key="workExp.placeOfWork" :style="{backgroundImage:`url(${workExp.image})`,backgroundSize:'cover',backgroundRepeat:'no repeat'}">
+      <img :src="workExp.contact.image" class="" alt="" width="150px" height="150px" >
       <h2>{{workExp.placeOfWork}}</h2>
       
       <p>{{workExp.description}}</p>
+      <!-- <h3>{{workExp.contact.image}}</h3> -->
+      <h3>{{workExp.year}}</h3>
+      
     </div>
   </div>
-  <button id="caro" class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  <button  class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span id="caro" class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
   </button>
-  <button id="caros" class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  <button  class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span id="caros" class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
 </div>
@@ -70,99 +73,109 @@
 </template>
 <script>
 export default {
-    data() {
-        return {
-            createView:false
-        }
+  data() {
+    return {
+      createView: false,
+    };
+  },
+  methods: {
+    createViewIf() {
+      this.createView = !this.createView;
     },
-    methods: {
-        createViewIf(){
-            this.createView =!this.createView
-        }
+  },
+  props: ["image"],
+  computed: {
+    educationData() {
+      return this.$store.state.education;
     },
-    props:[
-        "image"
-    ],
-    computed:{
-       
-       educationData()
-    {
-     return this.$store.state.education
-    } ,
-    workExpData(){
-        return this.$store.state.workExp
+    workExpData() {
+      return this.$store.state.workExp;
     },
-    skillsData(){
-        return this.$store.state.skills
-    }
-   },
-   mounted() {
-      this.$store.dispatch('getEducation')
-      this.$store.dispatch('getWorkExperience')
-      this.$store.dispatch('getSkills')
-   }
-}
+    skillsData() {
+      return this.$store.state.skills;
+    },
+  },
+  mounted() {
+    this.$store.dispatch("getEducation");
+    this.$store.dispatch("getWorkExperience");
+    this.$store.dispatch("getSkills");
+  },
+};
 </script>
 <style scoped>
-    #education{
-        /* display: flex;
+#education {
+  /* display: flex;
     justify-content: center; */
-        width: 300px;
-        height: 200px;
-        color:#fad0f9 ;
-        /* text-align: center; */
-        margin-top: 30px;
-        
-    }
-    #edu{
-        margin-top: 50px;
-    }
-    #data{
-        display: grid;
-        grid-template-columns:repeat(3,1fr) ;
-        /* background-image: url('https://i.pinimg.com/originals/7d/d1/30/7dd1305bf92447d37e81c573440b2580.gif');
+  width: 300px;
+  height: 200px;
+  color: #fad0f9;
+  /* text-align: center; */
+  margin-top: 30px;
+}
+
+#edu {
+  margin-top: 50px;
+}
+
+#data {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* background-image: url('https://i.pinimg.com/originals/7d/d1/30/7dd1305bf92447d37e81c573440b2580.gif');
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
         height:100vh */
+}
 
-    }
-    #container{
-        background-image: url('https://siphokuhlenyana.github.io/Vue_projectImages/moonwalk.gif');
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 100%;
-        height: 150vh;
-        color: #fad0f9 ;
-        background-color: white;
-        margin-top:3%;
-    }
-    #skills{
-        display: grid;
-        grid-template-columns:repeat(3,1fr) ;
-        gap: 20px;
-        background-color: white;
-        color: black;
-    }
-    #indication{
-        display: flex;
-        justify-content: flex-end;
-    }
-    #agile{
-        display: flex;
-        justify-content: center;
-        margin-top: 200px;
-    }
-    #view{
-        width: 300px;
-        height: 300px;
-    }
-    button{
-        border-left-color: black;
-        color:#fad0f9;
-        background-color: #a300a3;
-    }
-    #caro {
-        background-color:#91074a;
-    }
+#container {
+  background-image: url("https://siphokuhlenyana.github.io/Vue_projectImages/moonwalk.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 150vh;
+  color: #fad0f9;
+  background-color: white;
+  /* margin-top: 3%; */
+}
+
+#skills {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  background-color: white;
+  color: black;
+}
+
+#indication {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* #agile {
+  display: flex;
+  justify-content: center;
+  margin-top: 200px;
+} */
+
+/* #view {
+  width: 300px;
+  height: 300px;
+} */
+
+#view,
+#hide {
+  border-left-color: black;
+  color: #fad0f9;
+  background-color: #a300a3;
+}
+
+#caro,
+#caros {
+  background-color: #91074a;
+  color: #91074a;
+}
+#caro,
+#caros :active {
+  background-color: #91074a;
+}
 </style>
