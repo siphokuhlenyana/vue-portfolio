@@ -54,15 +54,16 @@
               <li class="nav-item">
                 <a class="nav-link" href="#resumepage">Resume</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#projectspage">Projects</a>
-              </li>
+              
               <li class="nav-item">
                 <a class="nav-link" href="#testimonials">Reviews</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projectspage">Projects</a>
+              </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#contact">Reach Out</a>
+                <a class="nav-link" href="#contactme">Reach Out</a>
               </li>
             </ul>
 

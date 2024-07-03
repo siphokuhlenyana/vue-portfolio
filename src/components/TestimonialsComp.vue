@@ -1,4 +1,5 @@
 <template lang="">
+  <div class="container-fluid">
        <h1 class="display-2" :style="{color:'black'}">Reviews</h1>
     <div class="d-flex justify-content-center">
         
@@ -13,6 +14,7 @@
             </div>
         </div>
     </div>
+  </div>
 
 <!-- </div> -->
   
@@ -52,5 +54,9 @@ export default {
        justify-content: center;
 
        gap: 10px;
+       margin-top:10px;
+     }
+     .container-fluid{
+      margin-top:79px;
      }
 </style>
