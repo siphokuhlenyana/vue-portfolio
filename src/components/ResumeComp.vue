@@ -110,7 +110,7 @@ export default {
   height: 200px;
   color: #fad0f9;
   /* text-align: center; */
-  margin-top: 30px;
+  margin-top: 70px;
 }
 
 #edu {
@@ -136,6 +136,7 @@ export default {
   color: #fad0f9;
   background-color: white;
   /* margin-top: 3%; */
+  padding-top:50px;
 }
 
 #skills {

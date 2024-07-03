@@ -35,7 +35,9 @@ export default {
     
 }
 .container{
-    background-color: #33051cf9 ;
+  background-color: #33051c;
+  
+  
     text-align: center;
     color: #fad0f9;
     height: 105vh;

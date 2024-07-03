@@ -1,4 +1,5 @@
 <template lang="">
+  <div id="container">
    <h1 class="display-2" :style="{marginTop:'20px',color:'black'}" >Projects</h1>
    <div id="prod">
     <div class="card" v-for="project in projectData" :key="project.name" style="width: 18rem;">
@@ -13,7 +14,7 @@
   </div>
 </div>
    </div>
-        
+     </div>   
        
 
 </template>
@@ -37,6 +38,9 @@ export default {
 #prod {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+}
+#container{
+  margin-top:60px;
 }
 
 </style>
