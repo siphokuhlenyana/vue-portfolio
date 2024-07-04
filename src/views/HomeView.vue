@@ -10,12 +10,13 @@
       <section class="row" id="resumepage">
         <ResumeComp/>
       </section>
-      <section class="row" id="testimonials">
-        <TestimonialsComp/>
-      </section>
       <section class="row" id="projectspage">
         <ProjectsComp/>
       </section>
+      <section class="row" id="testimonials">
+        <TestimonialsComp/>
+      </section>
+      
       <section class="row" id="contactpage">
         <ContactComp/>
       </section>

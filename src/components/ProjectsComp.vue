@@ -1,6 +1,6 @@
 <template lang="">
   <div id="container" >
-   <h1 class="display-2" :style="{marginTop:'20px',color:'black'}" >Projects</h1>
+   <h1 class="display-2 d-flex justify-content start" :style="{marginTop:'20px',color:'black'}" >Projects</h1>
    <div id="prod">
     <div class="card" v-for="project in projectData" :key="project.name" style="width: 18rem;">
   <img :src="project.image" class="card-img-top" alt="" :style="{filter:'blur(2px)'}">
@@ -40,10 +40,17 @@ export default {
   grid-template-columns: repeat(3, 1fr);
 }
 #container{
-  margin-top:60px;
+  padding-top:62px;
   padding-left:80px;
-  margin-bottom: 150px;
-  gap: 5px;
+  /* margin-bottom: 80px; */
+  background:linear-gradient(#FF00FF,pink)
+  
+  
+}
+.card{
+  margin-bottom: 50px;
+  border-color: #fad0f9;
+  border-width: 4px;
 }
 
 </style>

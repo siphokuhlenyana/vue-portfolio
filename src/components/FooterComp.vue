@@ -55,6 +55,6 @@ export default {
 </script>
 <style scoped>
     #footer{
-      margin-top: 200px;
+      margin-top: 0px;
     }
 </style>

@@ -33,7 +33,7 @@
       type="button"
       class="btn btn-outline-secondary"
       :style="{ backgroundColor: '#fa5ee2' }"
-    ><a href="https://drive.google.com/file/d/1v2KnTfTxeGKE9xj1RKcL_V7J0Ve_6OFK/view"> Download Resume</a></button
+    ><a href="https://docs.google.com/document/d/1DvIicxHyF7fdMmoYLpJD84GoLVkFD9gc/edit"> Download Resume</a></button
     ><br />
     
       <div
@@ -91,7 +91,7 @@ export default {
 </script>
   <style scoped>
   button{
-    top:50%
+    top:80%
   }
 .home {
   background-image: url("https://github.com/siphokuhlenyana/ImagesPortfolio/blob/main/MYPIC.jpg?raw=true");
