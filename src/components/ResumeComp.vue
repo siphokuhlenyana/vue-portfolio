@@ -80,6 +80,13 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
+<button
+      type="button"
+      class="btn btn-outline-secondary"
+      :style="{ backgroundColor: '#fa5ee2' }"
+    ><a href="https://siphokuhlenyana.github.io/Vue_projectImages/kuhle cv-1.docx" download> Download Resume</a></button
+    ><br />
+    
 </div>
 
 </template>

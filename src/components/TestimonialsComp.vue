@@ -69,4 +69,10 @@ export default {
       box-shadow: 0px 5px 8px #bb0761e7;
       transform: rotateY(-20px);
      }
+
+     .poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 </style>

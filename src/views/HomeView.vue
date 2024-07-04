@@ -85,6 +85,8 @@ import ProjectsComp from '@/components/ProjectsComp.vue';
 import ContactComp from '@/components/ContactComp.vue';
 
 
+
+
 export default {
   name: 'HomeView',
   components: {

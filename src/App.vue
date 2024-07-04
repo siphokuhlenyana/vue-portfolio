@@ -26,7 +26,7 @@
     <NavBarComp/>
     
     <main >
-      <!-- <SpinnerComp/> -->
+      <SpinnerComp/>
       <router-view/>
     </main>
     <FooterComp/>
@@ -44,7 +44,7 @@ import NavBarComp from './components/NavBarComp.vue'
 export default{
   components:{
    NavBarComp,
-    FooterComp
+    FooterComp,
     // SpinnerComp
 
   }
@@ -69,6 +69,7 @@ export default{
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  
 }
 .wrapper {
   display: grid;

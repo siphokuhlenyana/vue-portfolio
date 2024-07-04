@@ -1,5 +1,6 @@
 <template >
   <!-- <section class="d-flex justify-content-between -column mb-3"> -->
+    
   <div class="home">
     <!-- <h1 id="hi">SIPHOKUHLE NYANA </h1> -->
 
@@ -29,13 +30,8 @@
       }"
     />
     <!-- <img id="horoscope" src="https://pngimg.com/d/capricorn_PNG35.png" alt="" width="250px" height="150px"> -->
-    <button
-      type="button"
-      class="btn btn-outline-secondary"
-      :style="{ backgroundColor: '#fa5ee2' }"
-    ><a href="https://docs.google.com/document/d/1DvIicxHyF7fdMmoYLpJD84GoLVkFD9gc/edit"> Download Resume</a></button
-    ><br />
-    
+    <SpinnerComp/>
+  
       <div
         id="text-intro"
         :style="{
@@ -83,10 +79,12 @@
   
   <script>
 // @ is an alias to /src
-
+import SpinnerComp from './SpinnerComp.vue';
 export default {
   name: "HomeView",
-  components: {},
+  components: {
+    SpinnerComp
+  },
 };
 </script>
   <style scoped>
