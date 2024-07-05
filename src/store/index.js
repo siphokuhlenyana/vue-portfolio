@@ -36,22 +36,38 @@ export default createStore({
   },
   actions: {
     async getAbout(context){
+      try{
       let fetchedInfo= await fetch('https://siphokuhlenyana.github.io/portdata/data.json')
     let converted =await fetchedInfo.json()
+    console.log("Data fetched successfully");
     console.log(converted);
     context.commit('setAboutMe',converted.aboutMe)
+      } catch(e){
+        alert("ERR_2.0");
+      }
     },
+
     async getSkills(context){
+      try{
       let fetchedInfo= await fetch('https://siphokuhlenyana.github.io/portdata/data.json')
     let converted =await fetchedInfo.json()
     console.log(converted);
+    console.log("Data fetched successfully ");
     context.commit('setSkills',converted.skills)
+      } catch(e){
+        alert("ERR_2.0");
+      }
     },
     async getEducation(context){
+      try{
       let fetchedInfo= await fetch('https://siphokuhlenyana.github.io/portdata/data.json')
     let converted =await fetchedInfo.json()
     console.log(converted);
+    console.log("Data fetched successfully ");
     context.commit('setEducation',converted.education)
+      } catch(e){
+        alert("ERR_2.0");
+      }
     },
     async getProjects(context){
       let fetchedInfo= await fetch('https://siphokuhlenyana.github.io/portdata/data.json')

@@ -1,6 +1,7 @@
 <template lang="">
-    <div class="container d-flex justify-content-center ">
-        <h1 id="thoughts" class="display-2" :style="{marginTop:'20px',color:'#0a0406'}"><svg xmlns="http://www.w3.org/2000/svg" width="100" height="150" fill="currentColor" class="bi bi-ear" id="thoughts" viewBox="0 0 16 16">
+    <div class="container d-flex justify-content-start">
+        
+        <h1 id="thoughts" class="display-2 d-flex justify-content start" :style="{marginTop:'20px',color:'#0a0406',borderLeftColor:'#E5C29C',borderLeftStyle:'solid',borderLeftWidth:'2px',borderLeftSize:'20px',height:'200px'}"><svg xmlns="http://www.w3.org/2000/svg" width="100" height="150" fill="currentColor" class="bi bi-ear" id="thoughts" viewBox="0 0 16 16">
   <path d="M8.5 1A4.5 4.5 0 0 0 4 5.5v7.047a2.453 2.453 0 0 0 4.75.861l.512-1.363a5.6 5.6 0 0 1 .816-1.46l2.008-2.581A4.34 4.34 0 0 0 8.66 1zM3 5.5A5.5 5.5 0 0 1 8.5 0h.16a5.34 5.34 0 0 1 4.215 8.618l-2.008 2.581a4.6 4.6 0 0 0-.67 1.197l-.51 1.363A3.453 3.453 0 0 1 3 12.547zM8.5 4A1.5 1.5 0 0 0 7 5.5v2.695q.168-.09.332-.192c.327-.208.577-.44.72-.727a.5.5 0 1 1 .895.448c-.256.513-.673.865-1.079 1.123A9 9 0 0 1 7 9.313V11.5a.5.5 0 0 1-1 0v-6a2.5 2.5 0 0 1 5 0V6a.5.5 0 0 1-1 0v-.5A1.5 1.5 0 0 0 8.5 4"/>
 </svg>Thoughts ...</h1>
 
@@ -38,7 +39,7 @@ export default {
 <style scoped>
 
 #submit{
-    margin-right: 30rem;
+    /* margin-right: 10rem; */
     text-shadow: 3px 2px  #fa5ee2;
 }
     #message{
@@ -66,9 +67,17 @@ export default {
         background-repeat: no-repeat;
         
         color:fuchsia;
+        font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
         
     }
     #thoughts{
         text-shadow:2px 2px pink ;
+    }
+    .poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
     }
 </style>

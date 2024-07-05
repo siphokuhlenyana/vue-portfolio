@@ -1,24 +1,22 @@
 <template lang="">
 <div id="container-fluid">
-  <h1 class="display-2 d-flex justify-content start" :style="{color:'#0a0406'}">Resume</h1>
+  <h1 class="display-2 d-flex justify-content start" id="resume" :style="{color:'#0a0406',borderLeftColor:'#bb0761e7',borderLeftStyle:'solid',borderLeftWidth:'2px',borderLeftSize:'20px',height:'200px'}">Resume</h1>
   <div class="row">
     <div id="container" class="col">
       
-        <h1  :style="{marginTop:'30px'}">Education</h1>
+        <h1 id="headedu"  :style="{marginTop:'30px'}">Education</h1>
         <button id="view" v-if="createView === false" @click="createViewIf()" :style="{width:'150px' ,height:'30px',borderRadius:'10%'}">View Description</button>
            <button id="hide" v-if="createView" @click="createViewIf()" :style="{width:'150px' ,height:'30px',borderRadius:'10%',marginTop:'50px'}">Hide Description </button>
         <div id="data">
             <div id="education" v-for="education,  in educationData" :key="education.placeOfInstitution" :style="{borderWidth:'5px',borderColor:'#a300a3',
                 borderStyle:'solid',borderRadius:'50%',
                 backgroundImage:'url(https://www.right-to-education.org/sites/right-to-education.org/files/rm373batch13-081_0.jpg)',backgroundRepeat:'no repeat',backgroundSize:'cover'}">
-                    <h3 id="edu">{{education.placeOfInstitution}} </h3>
-                    <h2>{{education.year}}</h2>
+                    <h4 id="edu">{{education.placeOfInstitution}} </h4>
+                    <h3 id="year">{{education.year}}</h3>
             
            <div id="view" >
             
-                <div v-show="createView" :style="{borderWidth:'5px',borderColor:'#a300a3',
-                    borderStyle:'solid',
-                    backgroundImage:'url(https://siphokuhlenyana.github.io/Vue_projectImages/education.jpg)',backgroundRepeat:'no repeat',backgroundSize:'cover',marginTop:'50px'}">
+                <div v-show="createView" :style="{marginTop:'50px',backgroundColor:'#a300a3'}">
                 <h5> {{education.description}}</h5>
             </div>
             
@@ -31,18 +29,18 @@
         </div>
       </div>
     
-      <div :style="{width:'30%',height:'102vh'}" class="col">
+      <div id="ski" :style="{width:'30%',height:'102vh'}" class="col">
         <h1 class="display-2 mx-auto" :style="{color:'black',marginTop:'10px',paddingBottom:'15px'}">
         <div id="indication"><h2 :style="{color:'#91074a'}">   <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-chat-quote" viewBox="0 0 16 16">
   <path d="M2.678 11.894a1 1 0 0 1 .287.801 11 11 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8 8 0 0 0 8 14c3.996 0 7-2.807 7-6s-3.004-6-7-6-7 2.808-7 6c0 1.468.617 2.83 1.678 3.894m-.493 3.905a22 22 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a10 10 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9 9 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105"/>
   <path d="M7.066 6.76A1.665 1.665 0 0 0 4 7.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 0 0 .6.58c1.486-1.54 1.293-3.214.682-4.112zm4 0A1.665 1.665 0 0 0 8 7.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 0 0 .6.58c1.486-1.54 1.293-3.214.682-4.112z"/>
 </svg> Soft Skills </h2><h2 :style="{color:'#fad0f9'}"> Hard Skills</h2></div></h1>
      
-        <div id="skills">
+        <div id="skill" :style="{width:'400px'}">
         <div id="skills" v-for="skill in skillsData" :key="skill.name"
-        :style="{borderBottomColor:skill.type =='soft'? '#91074a':'#fad0f9',borderBottomStyle:'solid',}">
-            <h4>{{skill.name}}</h4>
-            <h6>{{skill.level}}</h6>
+        :style="{borderBottomColor:skill.type =='soft'? '#91074a':'#fad0f9',borderBottomStyle:'solid'}">
+            <h4 id="name">{{skill.name}}</h4>
+            <h6 id="level">{{skill.level}}</h6>
         </div> 
            </div>
        </div>
@@ -51,7 +49,7 @@
 
       
       <div :style="{backgroundColor:'#FF00FF',height:'74vh'}">
-        <h1  :style="{marginTop:'20px',color:'#fad0f9'}" >Work Experience</h1>
+        <h1 id="workExp" :style="{marginTop:'20px',color:'#fad0f9'}" >Work Experience</h1>
         
         <!-- <div id="carouselExample" class="carousel slide">
         <div id="workExperience" v-for="workExp in workExpData" :key="workExp.placeOfWork">
@@ -61,13 +59,13 @@
 
     <div id="carouselExample" class="carousel slide mx-auto" :style="{backgroundColor:'#FF00FF',borderColor:'#fad0f9',borderRadius:'5px',borderWidth:'4px',borderStyle:'solid',paddingTop:'10px',width:'400px'}">
   <div class="carousel-inner">
-    <div class="carousel-item" :class="{active: workExp.id == 1}"  v-for="workExp in workExpData" :key="workExp.placeOfWork" :style="{backgroundColor:'#FF00FF'}">
+    <div class="carousel-item" :class="{active: workExp.id == 1}"  v-for="workExp in workExpData" :key="workExp.placeOfWork" :style="{backgroundColor:'#FF00FF' ,color:'black'}">
       <img :src="workExp.contact.image" class="" alt="" width="200px" height="150px" >
       <h2>{{workExp.placeOfWork}}</h2>
       
-      <p>{{workExp.description}}</p>
+      <p :style="{color:'black'}">{{workExp.description}}</p>
       <!-- <h3>{{workExp.contact.image}}</h3> -->
-      <h3>{{workExp.year}}</h3>
+      <h3 :style="{color:'black'}">{{workExp.year}}</h3>
       
     </div>
   </div>
@@ -80,11 +78,11 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
-<button
+<button id="but"
       type="button"
       class="btn btn-outline-secondary"
-      :style="{ backgroundColor: '#fa5ee2' }"
-    ><a href="https://siphokuhlenyana.github.io/Vue_projectImages/kuhle cv-1.docx" download> Download Resume</a></button
+      :style="{ backgroundColor: '#fa5ee2',textDecoration:'none',paddingRight:'5px',paddingLeft:'5px',color:'black' }"
+    >Download Resume<a href="https://siphokuhlenyana.github.io/Vue_projectImages/kuhle cv-1.docx" download>  </a></button
     ><br />
     
 </div>
@@ -122,6 +120,36 @@ export default {
 };
 </script>
 <style scoped>
+#but{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.carousel-item{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+#ski{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+#workExp{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+#headedu{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+#resume{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 #combo {
   display: grid;
   grid-template-columns: repeat (2, 1fr);
@@ -132,11 +160,41 @@ export default {
 #education {
   /* display: flex;
     justify-content: center; */
-  width: 300px;
+  width: 250px;
   height: 200px;
   color: #fad0f9;
   /* text-align: center; */
   margin-top: 70px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+@media (min-width:300px){
+  #education{
+    width:75%;
+  }
+}
+@media (min-width:300px){
+#edu,#year,#view{
+  font-size: medium;
+  width:75%;
+}
+}
+
+@media (min-width:300px){
+  #skill {
+    width:70%;
+    height:50%;
+  }
+}
+@media(min-width:300px){
+  #level,#name{
+    font-size: medium;
+  }
+}
+
+@media (min-width:300px){
+
 }
 
 #edu {
@@ -157,12 +215,16 @@ export default {
   background-image: url("https://siphokuhlenyana.github.io/Vue_projectImages/moonwalk.gif");
   background-repeat: no-repeat;
   background-size: cover;
-  width: 62%;
+  width: 59%;
   height: 140vh;
   color: #fad0f9;
   background-color: white;
   /* margin-top: 3%; */
   padding-top: 50px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-left:25px;
 }
 
 #skills {
@@ -172,7 +234,14 @@ export default {
   background-color: #ff00ff;
   color: black;
   width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-right:2px;
+  margin-left:0;
+
 }
+
 
 #indication {
   display: flex;
@@ -195,6 +264,7 @@ export default {
   border-left-color: black;
   color: #fad0f9;
   background-color: #a300a3;
+  width:250px;
 }
 
 #caro,
@@ -211,5 +281,10 @@ export default {
   background-color: #ff00ff;
   padding-top: 100px;
  
+}
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 </style>

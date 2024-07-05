@@ -19,7 +19,7 @@
           />
         </svg></a>
 
-        <svg
+       <a href="https://slack.com/workspace-signin" ><svg
           xmlns="http://www.w3.org/2000/svg"
           width="40"
           height="50"
@@ -30,14 +30,14 @@
           <path
             d="M3.362 10.11c0 .926-.756 1.681-1.681 1.681S0 11.036 0 10.111.756 8.43 1.68 8.43h1.682zm.846 0c0-.924.756-1.68 1.681-1.68s1.681.756 1.681 1.68v4.21c0 .924-.756 1.68-1.68 1.68a1.685 1.685 0 0 1-1.682-1.68zM5.89 3.362c-.926 0-1.682-.756-1.682-1.681S4.964 0 5.89 0s1.68.756 1.68 1.68v1.682zm0 .846c.924 0 1.68.756 1.68 1.681S6.814 7.57 5.89 7.57H1.68C.757 7.57 0 6.814 0 5.89c0-.926.756-1.682 1.68-1.682zm6.749 1.682c0-.926.755-1.682 1.68-1.682S16 4.964 16 5.889s-.756 1.681-1.68 1.681h-1.681zm-.848 0c0 .924-.755 1.68-1.68 1.68A1.685 1.685 0 0 1 8.43 5.89V1.68C8.43.757 9.186 0 10.11 0c.926 0 1.681.756 1.681 1.68zm-1.681 6.748c.926 0 1.682.756 1.682 1.681S11.036 16 10.11 16s-1.681-.756-1.681-1.68v-1.682h1.68zm0-.847c-.924 0-1.68-.755-1.68-1.68s.756-1.681 1.68-1.681h4.21c.924 0 1.68.756 1.68 1.68 0 .926-.756 1.681-1.68 1.681z"
           />
-        </svg>
+        </svg></a>
       </div>
         <footer>
   <figure class="text-center">
     <blockquote class="blockquote">
-      <p>~Be the change you want to see in the world.~</p>
+      <p :style="{color:'pink'}">~Be the change you want to see in the world.~</p>
     </blockquote>
-   <p>&copy;Siphokuhle Nyana.All Rights Reserved.<span id="jo">{{im}}</span></p>
+   <p :style="{color:'pink'}">&copy;Siphokuhle Nyana.All Rights Reserved.<span id="jo">{{im}}</span></p>
   <!-- <div id="pics">
   <a href="https://github.com/siphokuhlenyana" target="_blank" rel="noopener noreferrer"><img src="https://github.com/siphokuhlenyana/ImagesPortfolio/blob/main/github.jpg?raw=true" alt=""></a>
   <a href="https://www.linkedin.com/in/siphokuhle-nyana-6a917016a/" target="_blank" rel="noopener noreferrer"><img src="https://github.com/siphokuhlenyana/ImagesPortfolio/blob/main/LinkedIn-Logo.wine.png?raw=true" alt=""></a>
@@ -68,11 +68,17 @@ export default {
     #footer{
       margin-top: 0px;
       color:#c72f78;
+      font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
     }
     #icons{
       display: flex;
       justify-content:space-around;
       color:#c72f78;
     }
-   
+    a{
+      color:#c72f78;
+    }
+ 
 </style>

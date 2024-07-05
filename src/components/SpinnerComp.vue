@@ -47,7 +47,7 @@
   background: rgba(255, 0, 255, 0.692);
   background: radial-gradient(circle closest-side at 50% 40%, 94%, #000);
   transform-origin: 50% 40%;
-  animation: l25 1s infinite linear;
+  animation: l25 2s  linear;
 }
 @keyframes l25 {
   100% {transform: rotate(1turn)}

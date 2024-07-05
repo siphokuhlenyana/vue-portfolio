@@ -88,6 +88,31 @@ export default {
 };
 </script>
   <style scoped>
+/* #sipho{
+  width:100%;
+  height:auto;
+} */
+  @media  (min-width :300px){
+    #sipho{
+      width:30%;
+    }
+  }
+
+  /* #kuhle{
+    width:100% ;
+    height:auto;
+  } */
+  @media (min-width :300px){
+#kuhle{
+  width:35%
+}
+
+@media (min-width :300px){
+  #text-intro{
+    width:50%
+  }
+}
+  }
   button{
     top:80%
   }
@@ -98,6 +123,7 @@ export default {
   width: 100%;
   height: 90vh;
   background-color: #33051c;
+  max-width: 100%;
 }
 /* #hi{
       display: flex;
@@ -134,8 +160,11 @@ export default {
   width: 400px;
   height: 200px;
   position: absolute;
-  top: 25%;
-  right: 1rem;
+  top: 40%;
+  right: 6rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 #caret {
@@ -153,6 +182,11 @@ export default {
     } */
 .home {
   position: relative;
+}
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 </style>
   

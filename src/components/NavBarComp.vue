@@ -42,7 +42,7 @@
               aria-label="Close"
             ></button>
           </div>
-          <div class="offcanvas-body" id="offcanva">
+          <div class="offcanvas-body" id="offcanva" :style="{color:'#33051c'}">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#homepage">Home</a>
@@ -102,6 +102,9 @@ export default {};
   text-transform: uppercase;
   font-size: 50px;
   margin: 0;
+  font-family: "Poppins",sans-serif;
+  font-weight: 800;
+  font-style: italic;
   /* margin: 10px 0; */
 }
 #toogle {
@@ -111,6 +114,13 @@ export default {};
   color: fuchsia;
   border: 2px fuchsia solid;
 }
+.nav-item{
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: bold;
+}
+
+
 </style>
 <!-- <template lang="">
     <div>

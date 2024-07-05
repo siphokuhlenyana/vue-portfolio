@@ -62,6 +62,7 @@ export default{
 *{
   margin: 0px;
   /* width:100% */
+  max-width:inherit;
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
