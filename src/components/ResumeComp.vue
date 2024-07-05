@@ -2,7 +2,7 @@
 <div id="container-fluid">
   <h1 class="display-2 d-flex justify-content start" id="resume" :style="{color:'#0a0406',borderLeftColor:'#bb0761e7',borderLeftStyle:'solid',borderLeftWidth:'2px',borderLeftSize:'20px',height:'200px'}">Resume</h1>
   <div class="row">
-    <div id="container" class="col">
+    <div id="container" class="col-sm-12">
       
         <h1 id="headedu"  :style="{marginTop:'30px'}">Education</h1>
         <button id="view" v-if="createView === false" @click="createViewIf()" :style="{width:'150px' ,height:'30px',borderRadius:'10%'}">View Description</button>
@@ -192,10 +192,13 @@ export default {
     font-size: medium;
   }
 }
-
-@media (min-width:1262){
 #data{
-  width:60% 
+  width:400px;
+}
+@media (min-width: 1222px){
+#data{
+ width: 10%;
+
 }
 }
 
