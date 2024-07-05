@@ -197,7 +197,9 @@ export default {
 }
 @media (min-width: 1222px){
 #data{
- width: 10%;
+
+ display:grid;
+ grid-template-columns: repeat (1,1fr );
 
 }
 }
