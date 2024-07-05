@@ -193,8 +193,10 @@ export default {
   }
 }
 
-@media (min-width:300px){
-
+@media (min-width:1262){
+#data{
+  width:60% 
+}
 }
 
 #edu {
