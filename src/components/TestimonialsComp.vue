@@ -24,15 +24,14 @@
 <script>
 
 export default {
-    component:{
+   component: {
 
-    },
-    computed:{
-       
-       testimonialsData()
-    {
-     return this.$store.state.testimonials
-    } 
+   },
+   computed: {
+
+      testimonialsData() {
+         return this.$store.state.testimonials
+      }
    },
    mounted() {
       this.$store.dispatch('getTestimonials')
@@ -40,42 +39,43 @@ export default {
 }
 </script>
 <style scoped>
-
-    /* #test{
+/* #test{
        display: grid;
       grid-template-columns: repeat ( 2,1fr);
       gap:30px;  
       width:100%;
       height:10px;
     } */
-     #container{
+#container {
 
-        display: grid;
-        grid-template-columns: repeat (3,1fr);
-       justify-content: center;
+   display: grid;
+   grid-template-columns: repeat (3, 1fr);
+   justify-content: center;
 
-       gap: 10px;
-       /* margin-top:10px; */
-     }
-     .container-fluid{
-      /* margin-top:79px; */
-      /* margin-bottom:150px; */
-      background-color:pink ;
-      padding-bottom: 80px;
-      padding-top:100px;
-      font-family: "Poppins", sans-serif;
+   gap: 10px;
+   /* margin-top:10px; */
+}
+
+.container-fluid {
+   /* margin-top:79px; */
+   /* margin-bottom:150px; */
+   background-color: pink;
+   padding-bottom: 80px;
+   padding-top: 100px;
+   font-family: "Poppins", sans-serif;
    font-weight: 400;
-    font-style: normal;
-      
-     }
-     .card :hover{
-      box-shadow: 0px 5px 8px #bb0761e7;
-      transform: rotateY(-20px);
-     }
+   font-style: normal;
 
-     .poppins-regular {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+}
+
+.card :hover {
+   box-shadow: 0px 5px 8px #bb0761e7;
+   transform: rotateY(-20px);
+}
+
+.poppins-regular {
+   font-family: "Poppins", sans-serif;
+   font-weight: 400;
+   font-style: normal;
 }
 </style>
