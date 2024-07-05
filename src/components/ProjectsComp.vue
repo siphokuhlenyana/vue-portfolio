@@ -10,8 +10,8 @@
     <p class="card-text">{{project.decription}}</p>
   </div>
   <div class="card-body">
-    <a :href="project.github" class="card-link">Github</a>
-    <a :href="project.vercel" class="card-link">Vercel</a>
+    <a :href="project.github" class="card-link" target="_blank">Github</a>
+    <a :href="project.vercel" class="card-link" target="_blank">Vercel</a>
   </div>
 </div>
    </div>
