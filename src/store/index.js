@@ -70,22 +70,37 @@ export default createStore({
       }
     },
     async getProjects(context){
+      try{
       let fetchedInfo= await fetch('https://siphokuhlenyana.github.io/portdata/data.json')
     let converted =await fetchedInfo.json()
     console.log(converted);
+    console.log("Data fetched successfully");
     context.commit('setProjects',converted.projects)
+      } catch(e){
+        alert("ERR_2.0")
+      }
     },
     async getWorkExperience(context){
+      try{
       let fetchedInfo= await fetch('https://siphokuhlenyana.github.io/portdata/data.json')
     let converted =await fetchedInfo.json()
     console.log(converted);
+    console.log("Data fetched successfully");
     context.commit('setWorkExperience',converted.workExp)
+      }catch(e){
+        alert("ERR_2.0")
+      }
     },
     async getTestimonials(context){
+      try{
       let fetchedInfo= await fetch('https://siphokuhlenyana.github.io/portdata/data.json')
     let converted =await fetchedInfo.json()
     console.log(converted);
+    console.log("Data fetched successfully");
     context.commit('setTestimonials',converted.testimonials)
+      }catch(e){
+        alert("ERR_2.0")
+      }
     },
   },
   modules: {

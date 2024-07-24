@@ -1,13 +1,13 @@
 <template lang="">
   <div class="container-fluid">
-       <h1 class="display-2 d-flex justify-content start" :style="{color:'#0a0406',borderLeftColor:'#bb0761e7',borderLeftStyle:'solid',borderLeftWidth:'2px',borderLeftSize:'20px',height:'200px'}">Reviews</h1>
+       <h1 class="display-2 d-flex justify-content start" :style="{color:'#fad0f9',borderLeftColor:'#bb0761e7',borderLeftStyle:'solid',borderLeftWidth:'2px',borderLeftSize:'20px',height:'200px'}">Reviews</h1>
     <div class="d-flex justify-content-center">
         
      
 
         <div class="container" id="container">
         <!-- <div class="col gap-2 justify-content-center "> -->
-            <div class="card" v-for="testimonial in testimonialsData" :key="testimonial.name" :style="{backgroundColor:'#0a0406',color:'#fad0f9',transition:'transform',borderRadius:'10%'}">
+            <div class="card" v-for="testimonial in testimonialsData" :key="testimonial.name" :style="{backgroundColor:'black',color:'#fad0f9',transition:'transform',borderRadius:'10%'}">
                 <h3 >{{ testimonial.name }} {{testimonial.surname }}</h3>
                 <img :src="testimonial.image" width="200px" height="200px" class="mx-auto" :style="{marginBottom:'20px'}">
               <span :style="{marginBottom:'10px',marginLeft:'25px',marginRight:'25px'}">"{{testimonial.description}}"</span>

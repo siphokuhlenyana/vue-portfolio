@@ -1,7 +1,7 @@
 <template lang="">
 
   <div id="container" >
-   <h1 class="display-2 d-flex justify-content start" id="assign" :style="{marginTop:'20px',color:'black',borderLeftColor:'#bb0761e7',borderLeftStyle:'solid',borderLeftWidth:'2px',borderLeftSize:'20px',height:'200px',marginLeft:'2px'}" >Projects</h1>
+   <h1 class="display-2 d-flex justify-content start" id="assign" :style="{marginTop:'20px',color:'#fad0f9',borderLeftColor:'#bb0761e7',borderLeftStyle:'solid',borderLeftWidth:'2px',borderLeftSize:'20px',height:'200px',marginLeft:'2px'}" >Projects</h1>
    <div id="prod">
     <div class="card" v-for="project in projectData" :key="project.name" style="width: 18rem;">
   <img :src="project.image" class="card-img-top" alt="" :style="{filter:'blur(2px)'}">
@@ -69,9 +69,10 @@ export default {
 }
 .card{
   margin-bottom: 50px;
-  border-color: #fad0f9;
+  border-color: black;
   border-width: 4px;
-  margin-left:80px;
+  margin-left:150px;
+  align-content: center;
 }
 
 .poppins-regular {

@@ -34,7 +34,7 @@
           }"
         >
           <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Navigation</h5>
+            <h2 class="offcanvas-title" id="offcanvasNavbarLabel">Navigation</h2>
             <button
               type="button"
               class="btn-close"
@@ -45,26 +45,26 @@
           <div class="offcanvas-body" id="offcanva" :style="{color:'#33051c'}">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#homepage">Home</a>
+                <a class="nav-link active" aria-current="page" href="#homepage"><h2>Home</h2></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#aboutpage">About</a>
-              </li>
-              
-              <li class="nav-item">
-                <a class="nav-link" href="#resumepage">Resume</a>
+                <a class="nav-link" href="#aboutpage"><h2>About</h2></a>
               </li>
               
+              <li class="nav-item">
+                <a class="nav-link" href="#resumepage"><h2>Resume</h2></a>
+              </li>
+              
               
               <li class="nav-item">
-                <a class="nav-link" href="#projectspage">Projects</a>
+                <a class="nav-link" href="#projectspage"><h2>Project</h2></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#testimonials">Reviews</a>
+                <a class="nav-link" href="#testimonials"><h2>Reviews</h2></a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#contactme">Reach Out</a>
+                <a class="nav-link" href="#contactme"><h2>Reach Out</h2></a>
               </li>
             </ul>
 
@@ -117,7 +117,9 @@ export default {};
 .nav-item{
   font-family: "Poppins", sans-serif;
   font-weight: 500;
-  font-style: bold;
+  font-style:bold;
+
+
 }
 
 
