@@ -176,7 +176,7 @@ export default {
 }
 @media (min-width:300px){
 #edu,#year,#view{
-  font-size: medium;
+  font-size: large;
   width:75%;
 }
 }
