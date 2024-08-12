@@ -87,7 +87,5 @@ export default {
     height:200px;
     margin-left:25px;
 }
-#aboutimg{
-  background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvtavVPUcO2YE5QrJyLqSaGjEv2C-d7pZZ_Q&s") ;
-}
+
 </style>

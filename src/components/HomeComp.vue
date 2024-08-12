@@ -42,11 +42,11 @@
           borderRadius: '10px ',
         }"
       >
-        <h2>
+        <h3>
           Hi👋,<br />
-          I am a Software Designer & Developer <br />have a look on my portfolio
+          I am an Aspiring  Software Designer & Developer <br />have a look on my portfolio
           ...
-        </h2>
+        </h3>
       </div>
     </div>
   

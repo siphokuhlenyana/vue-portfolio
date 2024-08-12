@@ -57,7 +57,7 @@
                 ></div> 
     </div> -->
 
-    <div id="carouselExample" class="carousel slide mx-auto" :style="{backgroundColor:'#FF00FF',borderColor:'#fad0f9',borderRadius:'5px',borderWidth:'4px',borderStyle:'solid',paddingTop:'10px',width:'400px'}">
+    <div id="carouselExample" class="carousel slide mx-auto" :style="{backgroundColor:'#FF00FF',borderColor:'#fad0f9',borderRadius:'5px',borderWidth:'4px',borderStyle:'solid',paddingTop:'10px',width:'1200px'}">
   <div class="carousel-inner">
     <div class="carousel-item" :class="{active: workExp.id == 1}"  v-for="workExp in workExpData" :key="workExp.placeOfWork" :style="{backgroundColor:'#FF00FF' ,color:'black'}">
       <img :src="workExp.contact.image" class="" alt="" width="200px" height="150px" >

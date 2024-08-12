@@ -7,7 +7,7 @@
 
         <div class="container" id="container">
         <!-- <div class="col gap-2 justify-content-center "> -->
-            <div class="card" v-for="testimonial in testimonialsData" :key="testimonial.name" :style="{backgroundColor:'black',color:'#fad0f9',transition:'transform',borderRadius:'10%'}">
+            <div class="card" v-for="testimonial in testimonialsData" :key="testimonial.name" :style="{backgroundColor:'#fad0f9',color:'black',transition:'transform',borderRadius:'10%',width:'300px'}">
                 <h3 >{{ testimonial.name }} {{testimonial.surname }}</h3>
                 <img :src="testimonial.image" width="200px" height="200px" class="mx-auto" :style="{marginBottom:'20px'}">
               <span :style="{marginBottom:'10px',marginLeft:'25px',marginRight:'25px'}">"{{testimonial.description}}"</span>
@@ -46,6 +46,7 @@ export default {
       width:100%;
       height:10px;
     } */
+     
 #container {
 
    display: grid;
@@ -59,7 +60,7 @@ export default {
 .container-fluid {
    /* margin-top:79px; */
    /* margin-bottom:150px; */
-   background-color: pink;
+   background-color: #33051cf9;
    padding-bottom: 80px;
    padding-top: 100px;
    font-family: "Poppins", sans-serif;
@@ -78,4 +79,6 @@ export default {
    font-weight: 400;
    font-style: normal;
 }
+
+
 </style>

@@ -1,9 +1,8 @@
 <template lang="">
     <div class="container d-flex justify-content-start">
         
-        <h1 id="thoughts" class="display-2 d-flex justify-content start" :style="{marginTop:'20px',color:'#fad0f9',borderLeftColor:'#E5C29C',borderLeftStyle:'solid',borderLeftWidth:'2px',borderLeftSize:'20px',height:'200px'}"><svg xmlns="http://www.w3.org/2000/svg" width="100" height="150" fill="currentColor" class="bi bi-ear" id="thoughts" viewBox="0 0 16 16">
-  <path d="M8.5 1A4.5 4.5 0 0 0 4 5.5v7.047a2.453 2.453 0 0 0 4.75.861l.512-1.363a5.6 5.6 0 0 1 .816-1.46l2.008-2.581A4.34 4.34 0 0 0 8.66 1zM3 5.5A5.5 5.5 0 0 1 8.5 0h.16a5.34 5.34 0 0 1 4.215 8.618l-2.008 2.581a4.6 4.6 0 0 0-.67 1.197l-.51 1.363A3.453 3.453 0 0 1 3 12.547zM8.5 4A1.5 1.5 0 0 0 7 5.5v2.695q.168-.09.332-.192c.327-.208.577-.44.72-.727a.5.5 0 1 1 .895.448c-.256.513-.673.865-1.079 1.123A9 9 0 0 1 7 9.313V11.5a.5.5 0 0 1-1 0v-6a2.5 2.5 0 0 1 5 0V6a.5.5 0 0 1-1 0v-.5A1.5 1.5 0 0 0 8.5 4"/>
-</svg>Thoughts ...</h1>
+        <h1 id="thoughts" class="display-2 d-flex justify-content start" :style="{marginTop:'20px',color:'#fad0f9',borderLeftColor:'#E5C29C',borderLeftStyle:'solid',borderLeftWidth:'2px',borderLeftSize:'20px',height:'200px'}">
+       Reach Out </h1>
 
 <div id="contactme">
 
@@ -22,7 +21,7 @@
     <input type="date" id="appoD" name="appoD" value="" ><br><br>
 
 
-    <input type="submit" value="Submit" id="submit">
+    <input type="submit" value="Send" id="submit">
   </form> 
 
 
@@ -54,15 +53,17 @@ export default {
         /* margin-bottom: 100px; */
         padding-bottom: 150px;
         padding-right:-100px;
+        margin-left: 200px;
         font-weight: 500;
         margin-top:170px;
+        justify-content: center;
        
     }
     .container{
         height:140vh;
          /* padding-top: 50px;  */
         /* margin-top: 250px;   */
-        background-image: url("https://cdn-images-1.medium.com/max/1600/1*3fSbM56prlEHMbd106MbqQ.gif");
+        background-image: url("https://gifdb.com/images/high/pink-aesthetic-neon-night-road-v4bhs8sbgu5sp60p.gif");
         background-size: cover;
         background-repeat: no-repeat;
         

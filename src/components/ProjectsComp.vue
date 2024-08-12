@@ -63,7 +63,8 @@ export default {
   padding-top:62px;
   
   /* margin-bottom: 80px; */
-  background:linear-gradient(#FF00FF,pink)
+  /* background:linear-gradient(#FF00FF,pink) */
+  background-color:  #33051cf9;
   
   
 }
@@ -73,6 +74,7 @@ export default {
   border-width: 4px;
   margin-left:150px;
   align-content: center;
+  background-color: #fad0f9;
 }
 
 .poppins-regular {
