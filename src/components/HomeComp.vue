@@ -51,6 +51,7 @@
     </div>
   
 
+
   <!-- <h1 id="hi">SIPHOKUHLE NYANA </h1> -->
 
   <!-- <img id="kuhle" src="https://github.com/siphokuhlenyana/ImagesPortfolio/blob/main/MYPIC.jpg?raw=true" alt="" width="420px" :style="{borderRadius:'10%',borderWidth:'25px',borderStyle:'solid',borderColor:'#33051c'}">
@@ -92,6 +93,11 @@ export default {
   width:100%;
   height:auto;
 } */
+
+.menu-button:hover + .menu-list {
+  display: block;
+}
+
   @media  (min-width :300px){
     #sipho{
       width:30%;
