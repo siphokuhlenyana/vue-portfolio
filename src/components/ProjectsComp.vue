@@ -1,6 +1,6 @@
 <template lang="">
 
-  <div id="container" >
+  <div id="container"  >
    <h1 class="display-2 d-flex justify-content start" id="assign" :style="{marginTop:'20px',color:'#fad0f9',borderLeftColor:'#bb0761e7',borderLeftStyle:'solid',borderLeftWidth:'2px',borderLeftSize:'20px',height:'200px',marginLeft:'2px'}" >Projects</h1>
    <div id="prod">
     <div class="card" v-for="project in projectData" :key="project.name" style="width: 18rem;">
@@ -61,7 +61,7 @@ export default {
 }
 #container{
   padding-top:62px;
-  
+    transition:all ease-in-out 0.5;
   /* margin-bottom: 80px; */
   /* background:linear-gradient(#FF00FF,pink) */
   background-color:  #33051cf9;
@@ -75,6 +75,10 @@ export default {
   margin-left:150px;
   align-content: center;
   background-color: #fad0f9;
+
+}
+.container :hover{
+ width :2px;
 }
 
 .poppins-regular {

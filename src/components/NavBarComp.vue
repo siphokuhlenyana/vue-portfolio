@@ -1,13 +1,15 @@
 <template>
   <div id="nav" class="sticky-top">
     <nav class="navbar bg sticky-top">
+       <img id="homeicon" src="https://siphokuhlenyana.github.io/ImagesPortfolio/home.png" alt="" height="70px" >
       <div class="container-fluid">
+       
         <a class="navbar-brand" href="#"
           ><img
             id="logo"
             src="https://github.com/siphokuhlenyana/ImagesPortfolio/blob/main/sn.png?raw=true"
-            width="250px"
-            height="100px"
+            width="300px"
+            height="200px"
         /></a>
         <h1 id="hi">SIPHOKUHLE NYANA</h1>
         <button
@@ -81,13 +83,14 @@ export default {};
 #nav {
   background-color: #91074a;
   width: 100%;
-  height: 6rem;
+  height: 16rem;
 }
 #logo {
-  display: flex;
-  justify-self: center;
+  display:flex;
+  justify-self:center;
   padding: 0;
-  width: 100%;
+  /* width: 200; */
+  height: 15rem;
 }
 
 #hi {
@@ -121,7 +124,9 @@ export default {};
 
 
 }
-
+#homeicon{
+  margin-left:360px ;
+}
 
 </style>
 <!-- <template lang="">
