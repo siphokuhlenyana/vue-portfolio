@@ -1,8 +1,8 @@
 <template>
  
     <div >
-     <!-- <div class="loader mx-auto"  :style="{paddingTop:'150px'}"></div>  -->
-     <img id="spinner" src="https://siphokuhlenyana.github.io/dlozify-pics/Dual%20Ball@1x-3.2s-200px-200px.gif" alt="" width="100px" height="200px">
+     <div class="loader mx-auto"  :style="{paddingTop:'150px'}"></div> 
+     <!-- <img id="spinner" src="https://siphokuhlenyana.github.io/dlozify-pics/Dual%20Ball@1x-3.2s-200px-200px.gif" alt="" width="100px" height="200px"> -->
      <!-- <onBeforeMount/> -->
     </div>
 </template>
@@ -40,25 +40,25 @@
 
 </script>
 <style scoped>
-.spinner {
+/* .spinner {
   /* display: inline-block; */
-  width: 20px;
-  height: 20px;
+  /* width: 20px;
+  height: 20px; */
   /* border: 3px solid #ccc;
   border-top: 3px solid #333; */
-  border-radius: 50%;
-  animation: spin 1s linear ;
-}
+  /* border-radius: 50%;
+  animation: spin 1s linear ; */
+/* }
 @keyframes spin {
   0% {
     transform: rotate(0deg);
   }
   100% {
     transform: rotate(360deg);
-  }
-}
+  } */
+/* }  */
 
-/* .loader {
+.loader {
   width: 5px;
   aspect-ratio: 1;
   border-radius: 50%;
@@ -69,5 +69,5 @@
 }
 @keyframes l25 {
   100% {transform: rotate(1turn)}
-} */
+}
 </style>

@@ -4,7 +4,7 @@
   <div class="home" >
     <!-- <h1 id="hi">SIPHOKUHLE NYANA </h1> -->
    
-    <div v-if="!loading">
+    >
     <img
       id="kuhle"
       src="https://github.com/siphokuhlenyana/ImagesPortfolio/blob/main/MYPIC.jpg?raw=true"
@@ -49,9 +49,10 @@
           ...
         </h3>
       </div>
+        <SpinnerComp/> 
     </div>
-      <div class="spinner" v-else><SpinnerComp/> </div>
-    </div>
+    
+  
     
    
   
@@ -190,7 +191,7 @@ export default {
   height: 200px;
   position: absolute;
   top: 45%;
-  right: 6rem;
+  right: 3rem;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
