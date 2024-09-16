@@ -134,9 +134,9 @@ export default {};
   margin-left:0 ;
   /* margin-right: 10px; */
 }
-/* #abouticon{
+#abouticon{
   margin-left:-200px ;
-} */
+}
 
 
 </style>
