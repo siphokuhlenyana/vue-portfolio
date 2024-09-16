@@ -1,7 +1,7 @@
 <template>
   <div id="nav" class="sticky-top">
     <nav class="navbar bg sticky-top">
-       <img id="homeicon" src="https://siphokuhlenyana.github.io/ImagesPortfolio/home.png" alt="" height="70px" >
+       
       <div class="container-fluid">
        
         <a class="navbar-brand" href="#"
@@ -12,7 +12,12 @@
             height="200px"
         /></a>
         <h1 id="hi">SIPHOKUHLE NYANA</h1>
-        <button
+        <a href="#homepage"><img id="homeicon" src="https://siphokuhlenyana.github.io/ImagesPortfolio/home.png" alt="" height="50px" ></a>
+        <a href="#aboutpage"><img id="abouticon" src="https://siphokuhlenyana.github.io/ImagesPortfolio/information.png" alt="" height="50px" ></a>
+        <a href="#resumepage"><img id="eduicon" src="https://siphokuhlenyana.github.io/ImagesPortfolio/college.png" alt="" height="50px" ></a>
+        <a href="#projectspage"><img id="projicon" src="https://siphokuhlenyana.github.io/ImagesPortfolio/layers.png" alt="" height="50px" ></a>
+        <a href="#contactme"><img id="emailicon" src="https://siphokuhlenyana.github.io/ImagesPortfolio/email.png" alt="" height="50px" ></a>
+        <!-- <button
           id="toogle"
           class="navbar-toggler"
           type="button"
@@ -22,8 +27,8 @@
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
+        </button> -->
+        <!-- <div
           class="offcanvas offcanvas-end"
           tabindex="-1"
           id="offcanvasNavbar"
@@ -72,7 +77,8 @@
 
           </div>
         </div>
-      </div>
+      </div> -->
+    </div>
     </nav>
   </div>
 </template>
@@ -83,7 +89,7 @@ export default {};
 #nav {
   background-color: #91074a;
   width: 100%;
-  height: 16rem;
+  height: 12rem;
 }
 #logo {
   display:flex;
@@ -104,7 +110,7 @@ export default {};
   /* z-index: 10000; */
   text-transform: uppercase;
   font-size: 50px;
-  margin: 0;
+  margin:0;
   font-family: "Poppins",sans-serif;
   font-weight: 800;
   font-style: italic;
@@ -125,8 +131,13 @@ export default {};
 
 }
 #homeicon{
-  margin-left:360px ;
+  margin-left:0 ;
+  /* margin-right: 10px; */
 }
+/* #abouticon{
+  margin-left:-200px ;
+} */
+
 
 </style>
 <!-- <template lang="">
