@@ -1,9 +1,10 @@
 <template >
   <!-- <section class="d-flex justify-content-between -column mb-3"> -->
-    
-  <div class="home">
-    <!-- <h1 id="hi">SIPHOKUHLE NYANA </h1> -->
 
+  <div class="home" >
+    <!-- <h1 id="hi">SIPHOKUHLE NYANA </h1> -->
+   
+    <div v-if="!loading">
     <img
       id="kuhle"
       src="https://github.com/siphokuhlenyana/ImagesPortfolio/blob/main/MYPIC.jpg?raw=true"
@@ -30,7 +31,7 @@
       }"
     />
     <!-- <img id="horoscope" src="https://pngimg.com/d/capricorn_PNG35.png" alt="" width="250px" height="150px"> -->
-    <SpinnerComp/>
+   
   
       <div
         id="text-intro"
@@ -41,7 +42,7 @@
           boxShadow: '16px 16px 25px #fa5ee2',
           borderRadius: '10px ',
         }"
-      >
+      > 
         <h3>
           Hi👋,<br />
           I am an Aspiring  Software Designer & Developer <br />have a look on my portfolio
@@ -49,8 +50,11 @@
         </h3>
       </div>
     </div>
+      <div class="spinner" v-else><SpinnerComp/> </div>
+    </div>
+    
+   
   
-
 
   <!-- <h1 id="hi">SIPHOKUHLE NYANA </h1> -->
 
@@ -81,11 +85,30 @@
   <script>
 // @ is an alias to /src
 import SpinnerComp from './SpinnerComp.vue';
+import axios from 'axios'
 export default {
+  data() {
+    return {
+      loading: false,
+      content: null
+    }
+  },
   name: "HomeView",
   components: {
     SpinnerComp
   },
+ 
+  mounted() {
+    // fetch data from API
+    axios.get('https://siphokuhlenyana.github.io/portdata/')
+      .then(response => {
+        this.content = response.data
+        this.loading = true
+      })
+      .catch(error => {
+        console.error(error)
+      })
+  }
 };
 </script>
   <style scoped>
@@ -166,7 +189,7 @@ export default {
   width: 400px;
   height: 200px;
   position: absolute;
-  top: 40%;
+  top: 45%;
   right: 6rem;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
