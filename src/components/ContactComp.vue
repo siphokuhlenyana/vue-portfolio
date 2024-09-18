@@ -61,11 +61,12 @@ export default {
     }
     .container{
         height:140vh;
+        background-color: #33051c;
          /* padding-top: 50px;  */
         /* margin-top: 250px;   */
-        background-image: url("https://gifdb.com/images/high/pink-aesthetic-neon-night-road-v4bhs8sbgu5sp60p.gif");
+        /* background-image: url("https://gifdb.com/images/high/pink-aesthetic-neon-night-road-v4bhs8sbgu5sp60p.gif");
         background-size: cover;
-        background-repeat: no-repeat;
+        background-repeat: no-repeat; */
         
         color:fuchsia;
         font-family: "Poppins", sans-serif;

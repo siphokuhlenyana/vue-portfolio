@@ -12,7 +12,7 @@
             height="200px"
         /></a>
         <h1 id="hi">SIPHOKUHLE NYANA</h1>
-        <a href="#homepage" ><img id="homeicon" src="https://siphokuhlenyana.github.io/ImagesPortfolio/home.png" alt="" height="50px" ><br><span>Home</span></a>
+        <a href="#homepage" ><img id="homeicon" src="https://siphokuhlenyana.github.io/ImagesPortfolio/home.png" alt="" height="50px" ><br><span id="home">Home</span></a>
         <a href="#aboutpage"><img id="abouticon" src="https://siphokuhlenyana.github.io/ImagesPortfolio/information.png" alt="" height="50px" ><br><span>About</span></a>
         <a href="#resumepage"><img id="eduicon" src="https://siphokuhlenyana.github.io/ImagesPortfolio/college.png" alt="" height="50px" ><br><span>Education & Experience</span></a>
         <a href="#projectspage"><img id="projicon" src="https://siphokuhlenyana.github.io/ImagesPortfolio/layers.png" alt="" height="50px" ><br><span>Projects</span></a>
@@ -86,9 +86,27 @@
 export default {};
 </script>
 <style >
+@media only screen and (max-width: 961px){
+  span{
+    font-size:large;
+    font-weight:700;
+    font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  }
+  #hi{
+    margin-right:6rem;
+  }
+  /* #homeicon,#home{
+    margin-left:-50px;
+  } */
+}
 span{
   text-decoration: none;
   color:#fad0f9 ;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 a{
   text-decoration: none;

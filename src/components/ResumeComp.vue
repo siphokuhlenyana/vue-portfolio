@@ -52,7 +52,7 @@
       </div>
 
       
-      <div :style="{backgroundColor:'#FF00FF',height:'74vh',backgroundColor:'#33051c'}">
+      <div id="work" :style="{backgroundColor:'#FF00FF',height:'74vh',backgroundColor:'#33051c'}">
         <h2 class="display-2 d-flex justify-content start" id="workExp" :style="{color:'#fad0f9',borderLeftColor:'#bb0761e7',borderLeftStyle:'solid',borderLeftWidth:'4px',borderLeftSize:'20px',height:'80px',marginBottom:'1rem'}">Work Experience</h2>
 <!-- 
         <h1 id="workExp"  :style="{marginTop:'20px',color:'#fad0f9'}" >Work Experience</h1> -->
@@ -188,9 +188,33 @@ export default {
  margin-top: 3rem;
  margin-left: 30rem;
 }
+@media only screen and (max-width: 961px) {
+ #data{
+  margin-left: 15rem;
+  height: 200px;
+  gap:2px;
+ }
+ #ski{
+  margin-top:20rem;
+ margin-bottom: 20rem;
+ }
+ #work{
+  padding-bottom:30rem;
+ }
+ #education{
+    width:50%;
+    margin-right:-5rem;
+    /* margin-left:2rem; */
+    /* padding-bottom:10rem; */
+  }
+  #container{
+    margin-left:0
+  }
+}
 @media (min-width:300px){
   #education{
-    width:75%;
+    width:50%;
+    /* padding-bottom:10rem; */
   }
 }
 @media (min-width:300px){
