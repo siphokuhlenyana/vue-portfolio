@@ -1,7 +1,7 @@
 <template lang="">
 
   <div id="container"  >
-   <h1 class="display-2 d-flex justify-content start" id="assign" :style="{marginTop:'20px',color:'#fad0f9',borderLeftColor:'#bb0761e7',borderLeftStyle:'solid',borderLeftWidth:'2px',borderLeftSize:'20px',height:'200px',marginLeft:'2px'}" >Projects</h1>
+   <h2 class="display-2 d-flex justify-content start" id="assign" :style="{marginTop:'20px',color:'#fad0f9',borderLeftColor:'#bb0761e7',borderLeftStyle:'solid',borderLeftWidth:'4px',borderLeftSize:'20px',height:'200px',marginLeft:'2px'}" >Projects</h2>
    <div id="prod">
     <div class="card" v-for="project in projectData" :key="project.name" style="width: 18rem;">
   <img :src="project.image" class="card-img-top" alt="" :style="{filter:'blur(2px)'}">
@@ -36,12 +36,17 @@ export default {
   #prod{
     width:75%;
     
+    
   }
 }
 .card-body{
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  font-style: normal;
+  font-style: normal; 
+  transition: all 0.3s ease-in-out;
+}
+.card-body:hover{
+  box-shadow: 16px 16px 25px 25px #fa5ee2;
 }
 #assign{
   font-family: "Poppins", sans-serif;
@@ -58,24 +63,36 @@ export default {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
+  
 }
+
 #container{
   padding-top:62px;
     transition:all ease-in-out 0.5;
   /* margin-bottom: 80px; */
   /* background:linear-gradient(#FF00FF,pink) */
-  background-color:  #33051cf9;
+  background-color:  #33051c;
   
   
 }
 .card{
   margin-bottom: 50px;
-  border-color: black;
+  border-color:#fad0f9;
   border-width: 4px;
   margin-left:150px;
   align-content: center;
-  background-color: #fad0f9;
+  background-color: #fb9ff9;
+ 
 
+}
+.card :hover {
+        border-color: '#fa5ee2';
+          border-width: 2px;
+          border-style: 'dotted';
+          box-shadow: 16px 16px 25px 25px #fa5ee2;
+          border-radius: 10px ;
+   /* box-shadow: 0px 5px 8px #bb0761e7; */
+   transform: rotateY(-10px);
 }
 .container :hover{
  width :2px;

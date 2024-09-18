@@ -1,14 +1,14 @@
 <template>
     <div class="container">
-        <div class="row d-flex justify-content-center">
+        <div ><h2 class="display-2 d-flex justify-content start " id="about" :style="{color:'#fad0f9',borderLeftColor:'#bb0761e7',borderLeftStyle:'solid',borderLeftWidth:'4px',borderLeftSize:'20px'}">About</h2>
             <div id="aboutdiv">
-            <h2 class="display-2 d-flex justify-content start" id="about" :style="{color:'#fad0f9',borderLeftColor:'#bb0761e7',borderLeftStyle:'solid',borderLeftWidth:'2px',borderLeftSize:'20px'}">About</h2></div>
-    <img  id="aboutimg" src="https://siphokuhlenyana.github.io/Vue_projectImages/20240422_122000.jpg" alt="" :style="{borderRadius:'50%',paddingBottom:'20px'}">
+            
+    <img  id="aboutimg" src="https://siphokuhlenyana.github.io/Vue_projectImages/20240422_122000.jpg" alt="" :style="{paddingBottom:'20px',marginTop:'2rem'}">
             <!-- <img src="https://siphokuhlenyana.github.io/ImagesPortfolio/rhombus.png" alt=""> -->
            
-  
+   <p :style="{width:'1000px',marginTop:'6rem'}">{{aboutMe}}</p></div>
         </div>
-        <div> {{aboutMe}}</div>
+       
               
 
     </div>
@@ -34,13 +34,15 @@ export default {
     font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
+  /* margin: 0; */
+
 }
 #aboutimg{
-    width: 20%;
-    display: flex;
+    width: 800px;
+    /* display: flex;
     justify-content: center;
-    align-items:center;
-    height: 250px;
+    align-items:center; */
+    height: 450px;
 
     
     animation:alternate-reverse;
@@ -75,17 +77,26 @@ export default {
   background: linear-gradient(#33051c);
     text-align: center;
     color: #fad0f9;
-    height: 120vh;
+    height: 110vh;
     padding-top: 7%;
     padding-bottom: 50px;
     font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
+  display:grid;
+  grid-template-columns: repeat(2,1fr );
   /* margin-left:25px; */
+  /* padding-left: 0; */
 }
 #aboutdiv{
-    height:200px;
-    margin-left:25px;
+    height:180px;
+    margin-left:200px;
+    display:flex;
+    justify-content: center;
+    gap: 160px;
+    
+  
+  
 }
 
 </style>

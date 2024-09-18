@@ -12,11 +12,11 @@
             height="200px"
         /></a>
         <h1 id="hi">SIPHOKUHLE NYANA</h1>
-        <a href="#homepage"><img id="homeicon" src="https://siphokuhlenyana.github.io/ImagesPortfolio/home.png" alt="" height="50px" ></a>
-        <a href="#aboutpage"><img id="abouticon" src="https://siphokuhlenyana.github.io/ImagesPortfolio/information.png" alt="" height="50px" ></a>
-        <a href="#resumepage"><img id="eduicon" src="https://siphokuhlenyana.github.io/ImagesPortfolio/college.png" alt="" height="50px" ></a>
-        <a href="#projectspage"><img id="projicon" src="https://siphokuhlenyana.github.io/ImagesPortfolio/layers.png" alt="" height="50px" ></a>
-        <a href="#contactme"><img id="emailicon" src="https://siphokuhlenyana.github.io/ImagesPortfolio/email.png" alt="" height="50px" ></a>
+        <a href="#homepage" ><img id="homeicon" src="https://siphokuhlenyana.github.io/ImagesPortfolio/home.png" alt="" height="50px" ><br><span>Home</span></a>
+        <a href="#aboutpage"><img id="abouticon" src="https://siphokuhlenyana.github.io/ImagesPortfolio/information.png" alt="" height="50px" ><br><span>About</span></a>
+        <a href="#resumepage"><img id="eduicon" src="https://siphokuhlenyana.github.io/ImagesPortfolio/college.png" alt="" height="50px" ><br><span>Education & Experience</span></a>
+        <a href="#projectspage"><img id="projicon" src="https://siphokuhlenyana.github.io/ImagesPortfolio/layers.png" alt="" height="50px" ><br><span>Projects</span></a>
+        <a href="#contactme"><img id="emailicon" src="https://siphokuhlenyana.github.io/ImagesPortfolio/email.png" alt="" height="50px" ><br><span>Contact</span></a>
         <!-- <button
           id="toogle"
           class="navbar-toggler"
@@ -86,10 +86,23 @@
 export default {};
 </script>
 <style >
+span{
+  text-decoration: none;
+  color:#fad0f9 ;
+}
+a{
+  text-decoration: none;
+}
+a:active{
+  border-bottom: #fad0f9;
+  border-bottom-width:2px ;
+  border-bottom-style: solid;
+}
 #nav {
   background-color: #91074a;
   width: 100%;
   height: 12rem;
+  
 }
 #logo {
   display:flex;
@@ -127,7 +140,7 @@ export default {};
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-style:bold;
-
+text-decoration: none;
 
 }
 #homeicon{

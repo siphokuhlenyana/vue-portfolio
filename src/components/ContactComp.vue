@@ -1,8 +1,8 @@
 <template lang="">
     <div class="container d-flex justify-content-start">
         
-        <h1 id="thoughts" class="display-2 d-flex justify-content start" :style="{marginTop:'20px',color:'#fad0f9',borderLeftColor:'#E5C29C',borderLeftStyle:'solid',borderLeftWidth:'2px',borderLeftSize:'20px',height:'200px'}">
-       Reach Out </h1>
+        <h2 id="thoughts" class="display-2 d-flex justify-content start" :style="{marginTop:'20px',color:'#fad0f9',borderLeftColor:'#E5C29C',borderLeftStyle:'solid',borderLeftWidth:'4px',borderLeftSize:'20px',height:'200px'}">
+       Reach Out </h2>
 
 <div id="contactme">
 

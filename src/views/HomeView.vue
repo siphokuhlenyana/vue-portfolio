@@ -13,9 +13,7 @@
       <section class="row" id="projectspage">
         <ProjectsComp/>
       </section>
-      <section class="row" id="testimonials">
-        <TestimonialsComp/>
-      </section>
+      
       
       <section class="row" id="contactpage">
         <ContactComp/>
@@ -80,7 +78,7 @@
 import HomeComp from '@/components/HomeComp.vue';
 import AboutComp from '@/components/AboutComp.vue';
 import ResumeComp from '@/components/ResumeComp.vue';
-import TestimonialsComp from '@/components/TestimonialsComp.vue';
+// import TestimonialsComp from '@/components/TestimonialsComp.vue';
 import ProjectsComp from '@/components/ProjectsComp.vue';
 import ContactComp from '@/components/ContactComp.vue';
 
@@ -93,7 +91,7 @@ export default {
     HomeComp,
     AboutComp,
     ResumeComp,
-    TestimonialsComp,
+    // TestimonialsComp,
     ProjectsComp,
     ContactComp
     

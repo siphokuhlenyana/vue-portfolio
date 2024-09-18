@@ -77,5 +77,23 @@ export default{
   grid-template-rows: auto minmax(100dvh, 100%) auto;
 }
 
+::-webkit-scrollbar {
+  width: 10px; /* width of the scrollbar */
+  height: 10px; /* height of the scrollbar */
+  background-color:purple; /* background color of the scrollbar */
+}
 
+::-webkit-scrollbar-thumb {
+  background-color:#33051c; /* color of the scrollbar thumb */
+  border-radius: 10px; /* rounded corners of the scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color:#fff; /* hover color of the scrollbar thumb */
+}
+
+::-webkit-scrollbar-track {
+  background-color:#91074a; /* background color of the scrollbar track */
+  border-radius: 10px; /* rounded corners of the scrollbar track */
+}
 </style>

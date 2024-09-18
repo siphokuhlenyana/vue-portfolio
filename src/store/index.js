@@ -43,7 +43,7 @@ export default createStore({
     console.log(converted);
     context.commit('setAboutMe',converted.aboutMe)
       } catch(e){
-        alert("ERR_2.0");
+        alert(e);
       }
     },
 
@@ -55,7 +55,7 @@ export default createStore({
     console.log("Data fetched successfully ");
     context.commit('setSkills',converted.skills)
       } catch(e){
-        alert("ERR_2.0");
+        alert(e);
       }
     },
     async getEducation(context){
@@ -66,7 +66,7 @@ export default createStore({
     console.log("Data fetched successfully ");
     context.commit('setEducation',converted.education)
       } catch(e){
-        alert("ERR_2.0");
+        alert(e);
       }
     },
     async getProjects(context){
@@ -77,7 +77,7 @@ export default createStore({
     console.log("Data fetched successfully");
     context.commit('setProjects',converted.projects)
       } catch(e){
-        alert("ERR_2.0")
+        alert(e)
       }
     },
     async getWorkExperience(context){
@@ -88,7 +88,7 @@ export default createStore({
     console.log("Data fetched successfully");
     context.commit('setWorkExperience',converted.workExp)
       }catch(e){
-        alert("ERR_2.0")
+        alert(e)
       }
     },
     async getTestimonials(context){
@@ -99,7 +99,7 @@ export default createStore({
     console.log("Data fetched successfully");
     context.commit('setTestimonials',converted.testimonials)
       }catch(e){
-        alert("ERR_2.0")
+        alert(e)
       }
     },
   },
