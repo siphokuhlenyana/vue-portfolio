@@ -145,6 +145,7 @@ export default {
   font-style: normal;
   padding: 0;
   margin: 0;
+  margin-top: 4rem;
   
   
 }
@@ -237,6 +238,7 @@ export default {
 }
 #data{
   width:400px;
+  /* margin-bottom: 200rem; */
 }
 @media (min-width: 1222px){
 #data{
@@ -254,7 +256,7 @@ export default {
 #data {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 80px;
+  gap: 30px;
   /* background-image: url('https://i.pinimg.com/originals/7d/d1/30/7dd1305bf92447d37e81c573440b2580.gif');
         background-repeat: no-repeat;
         background-size: cover;
@@ -318,7 +320,7 @@ export default {
 } */
 
 #view {
-  width: 400px;
+  width: 500px;
   /* height: 300px; */
   
 }

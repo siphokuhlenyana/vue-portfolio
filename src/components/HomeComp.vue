@@ -154,6 +154,7 @@ export default {
   height: 90vh;
   background-color: #33051c;
   max-width: 100%;
+ 
 }
 /* #hi{
       display: flex;
@@ -190,8 +191,8 @@ export default {
   width: 400px;
   height: 200px;
   position: absolute;
-  top: 45%;
-  right: 3rem;
+  top: 30%;
+  right: 2rem;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;

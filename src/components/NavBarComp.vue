@@ -13,10 +13,10 @@
         /></a>
         <h1 id="hi">SIPHOKUHLE NYANA</h1>
         <a href="#homepage" ><img id="homeicon" src="https://siphokuhlenyana.github.io/ImagesPortfolio/home.png" alt="" height="50px" ><br><span id="home">Home</span></a>
-        <a href="#aboutpage"><img id="abouticon" src="https://siphokuhlenyana.github.io/ImagesPortfolio/information.png" alt="" height="50px" ><br><span>About</span></a>
-        <a href="#resumepage"><img id="eduicon" src="https://siphokuhlenyana.github.io/ImagesPortfolio/college.png" alt="" height="50px" ><br><span>Education & Experience</span></a>
-        <a href="#projectspage"><img id="projicon" src="https://siphokuhlenyana.github.io/ImagesPortfolio/layers.png" alt="" height="50px" ><br><span>Projects</span></a>
-        <a href="#contactme"><img id="emailicon" src="https://siphokuhlenyana.github.io/ImagesPortfolio/email.png" alt="" height="50px" ><br><span>Contact</span></a>
+        <a href="#aboutpage"><img id="abouticon" src="https://siphokuhlenyana.github.io/ImagesPortfolio/information.png" alt="" height="50px" ><br><span id="about">About</span></a>
+        <a href="#resumepage"><img id="eduicon" src="https://siphokuhlenyana.github.io/ImagesPortfolio/college.png" alt="" height="50px" ><br><span id="edu">Education & Experience</span></a>
+        <a href="#projectspage"><img id="projicon" src="https://siphokuhlenyana.github.io/ImagesPortfolio/layers.png" alt="" height="50px" ><br><span id="pro">Projects</span></a>
+        <a href="#contactme"><img id="emailicon" src="https://siphokuhlenyana.github.io/ImagesPortfolio/email.png" alt="" height="50px" ><br><span id="co">Contact</span></a>
         <!-- <button
           id="toogle"
           class="navbar-toggler"
@@ -146,6 +146,7 @@ a:active{
   font-weight: 800;
   font-style: italic;
   /* margin: 10px 0; */
+  margin-right:6rem;
 }
 #toogle {
   background-color: pink;
@@ -161,14 +162,25 @@ a:active{
 text-decoration: none;
 
 }
-#homeicon{
-  margin-left:0 ;
+/* #homeicon,#home{
+  margin-right:10rem;
   /* margin-right: 10px; */
+/* }
+#abouticon,#about{
+  margin-left:-10rem;
 }
-/* #abouticon{
-  margin-left:-200px ;
-} */
+#eduicon,#edu{
+  margin-right:2rem;
+}
+#projicon,#pro{
+  margin-right: 4rem;
+  /* margin-left: -6rem; */
+/* }
+#emailicon,#co{
+  margin-left: -6rem;
+  margin-right: 1rem; 
 
+}  */
 
 </style>
 <!-- <template lang="">
