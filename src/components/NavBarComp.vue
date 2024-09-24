@@ -97,9 +97,29 @@ export default {};
   #hi{
     margin-right:6rem;
   }
-  /* #homeicon,#home{
+  #homeicon,#home{
+  margin-right:10rem;
+   /* margin-right: 10px; */ 
+ }
+
+#abouticon,#about{
+  margin-left:-10rem;
+}
+#eduicon,#edu{
+  margin-right:2rem;
+}
+#projicon,#pro{
+  margin-right: 4rem;
+  margin-left: -6rem; 
+ }
+#emailicon,#co{
+  margin-left: -6rem;
+  margin-right: 1rem; 
+
+   /* #homeicon,#home{
     margin-left:-50px;
-  } */
+  }  */
+}
 }
 span{
   text-decoration: none;

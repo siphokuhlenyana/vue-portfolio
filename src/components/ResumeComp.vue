@@ -203,8 +203,9 @@ export default {
   padding-bottom:30rem;
  }
  #education{
-    width:50%;
+    width:10%;
     margin-right:-5rem;
+    gap: 2px;
     /* margin-left:2rem; */
     /* padding-bottom:10rem; */
   }
