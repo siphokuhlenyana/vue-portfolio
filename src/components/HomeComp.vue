@@ -119,10 +119,7 @@ export default {
 };
 </script>
   <style scoped>
-/* #sipho{
-  width:100%;
-  height:auto;
-} */
+
 
 .menu-button:hover + .menu-list {
   display: block;
@@ -139,10 +136,7 @@ export default {
     }
   }
 
-  /* #kuhle{
-    width:100% ;
-    height:auto;
-  } */
+ 
   @media (min-width :300px){
 #kuhle{
   width:35%
@@ -168,23 +162,7 @@ export default {
   padding-bottom:3rem;
  
 }
-/* #hi{
-      display: flex;
-      justify-content: center;
-      color: pink;
-      background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
-    background-size: cover;
-    color: transparent;
-    background-clip: text;
-    background-clip: text;
-    text-transform: uppercase;
-    font-size: 80px;
-    margin: 10px 0; 
- } 
- #horoscope{
-      
-      padding-top: 0;
-    } */
+
 #sipho {
   margin-right: 10px;
   margin-left: -180px;
@@ -213,16 +191,13 @@ export default {
 #caret {
   width: 50px;
   height: 50px;
-  /* display:flex;
-      justify-content:center */
+  
   margin-left: 20rem;
 }
 .socials {
   color: #fad0f9;
 }
-/* #3{
-  margin-left:20px
-    } */
+
 .home {
   position: relative;
 }

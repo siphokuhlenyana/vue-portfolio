@@ -40,23 +40,7 @@
 
 </script>
 <style scoped>
-/* .spinner {
-  /* display: inline-block; */
-  /* width: 20px;
-  height: 20px; */
-  /* border: 3px solid #ccc;
-  border-top: 3px solid #333; */
-  /* border-radius: 50%;
-  animation: spin 1s linear ; */
-/* }
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  } */
-/* }  */
+
 
 .loader {
   width: 5px;

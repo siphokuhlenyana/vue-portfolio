@@ -152,11 +152,11 @@ export default {
 }
 #workExp{
   font-family: "Poppins", sans-serif;
-  /* font-weight: 400; */
+
   font-style: normal;
   display: flex;
   justify-content: flex-start;
-  /* margin-left: 104px; */
+ 
   
 }
 #headedu{
@@ -173,17 +173,13 @@ export default {
   display: grid;
   grid-template-columns: repeat (2, 1fr);
 }
-/* #skool{
-  width:400px;
-} */
+
 #education {
-  /* display: flex;
-    justify-content: center; */
+  
   width: 200px;
   height: 200px;
   color: #fad0f9;
-  /* text-align: center; */
-  /* margin-top: 70px; */
+ 
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -209,17 +205,15 @@ export default {
     width:10%;
     margin-right:-10rem;
     gap: 1px;
-    /* margin-left:2rem; */
-    /* padding-bottom:10rem; */
-  }
+ }
   #container{
-    margin-left:0
+    margin-left:0;
   }
 }
 @media (min-width:300px){
   #education{
     width:40%;
-    /* padding-bottom:10rem; */
+    
   }
 }
 @media (min-width:300px){
@@ -240,9 +234,7 @@ export default {
     font-size: medium;
   }
 }
-/* #data{
-  width:400px;
-  /* margin-bottom: 200rem; */
+
  @media(max-width: 400px){
   #education{
     margin-bottom:250px;
@@ -274,24 +266,19 @@ export default {
   gap: 3rem;
  
   width:200px
-  /* background-image: url('https://i.pinimg.com/originals/7d/d1/30/7dd1305bf92447d37e81c573440b2580.gif');
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 100%;
-        height:100vh */
-        /* margin-left: 800px; */
+  
 }
 
 #container {
-  /* background-image: url("https://siphokuhlenyana.github.io/Vue_projectImages/moonwalk.gif"); */
+
   background-repeat: no-repeat;
   background-size: cover;
   width: 59%;
   height: 80vh;
   color: #fad0f9;
-  /* background-color:#91074a; */
+ 
   border-radius: 10%;
-  /* margin-top: 3%; */
+  
   padding-top: 10px;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -302,10 +289,9 @@ export default {
 #skills {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* display: flex;
-  flex-direction: row; */
+ 
   gap: 20px;
-  /* background-color: #91074a; */
+  
   color: black;
   width: 100%;
   font-family: "Poppins", sans-serif;
@@ -332,16 +318,12 @@ export default {
 padding-top: 2rem;
 }
 
-/* #agile {
-  display: flex;
-  justify-content: center;
-  margin-top: 200px;
-} */
+
 
 #view {
   width: 800px;
   border-radius:10%;
-  /* height: 300px; */
+ 
   
 }
 
@@ -350,7 +332,7 @@ padding-top: 2rem;
   border-left-color: black;
   color: #fad0f9;
   background-color: #91074a;
-  /* width:250px; */
+  
 }
 
 #caro,

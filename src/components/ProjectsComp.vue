@@ -32,10 +32,7 @@ export default {
 };
 </script>
 <style scoped>
-/* a{
-  display: flex;
-  justify-content:inherit;
-} */
+
 @media (min-width:300px){
   #prod{
     width:75%;
@@ -74,8 +71,7 @@ export default {
 #container{
   padding-top:62px;
     transition:all ease-in-out 0.5;
-  /* margin-bottom: 80px; */
-  /* background:linear-gradient(#FF00FF,pink) */
+ 
   background-color:  #33051c;
   
   
@@ -96,7 +92,7 @@ export default {
           border-style: 'dotted';
           box-shadow: 16px 16px 25px 25px #fa5ee2;
           border-radius: 10px ;
-   /* box-shadow: 0px 5px 8px #bb0761e7; */
+   
    transform: rotateY(-10px);
 }
 .container :hover{
