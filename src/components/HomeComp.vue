@@ -103,9 +103,7 @@ export default {
     }
   },
   name: "HomeView",
-  components: {
-    
-  },
+ 
  
   mounted() {
     // fetch data from API
@@ -181,9 +179,9 @@ export default {
     background-clip: text;
     text-transform: uppercase;
     font-size: 80px;
-    /* margin: 10px 0; */
-/* } */
-/* #horoscope{
+    margin: 10px 0; 
+ } 
+ #horoscope{
       
       padding-top: 0;
     } */

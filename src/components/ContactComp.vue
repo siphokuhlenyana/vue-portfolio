@@ -130,7 +130,7 @@ p{
        
     }
     .container{
-        height:170vh;
+        height:160vh;
         background-color: #33051c;
          /* padding-top: 50px;  */
         /* margin-top: 250px;   */
