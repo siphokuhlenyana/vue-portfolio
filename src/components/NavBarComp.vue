@@ -3,7 +3,13 @@
     <nav class="navbar bg sticky-top">
        
       <div class="container-fluid">
-       
+        
+        <a href="#homepage" ><img id="homeicon" src="https://siphokuhlenyana.github.io/ImagesPortfolio/home.png" alt="" height="50px" ><br><span id="home">Home</span></a>
+        <a href="#aboutpage"><img id="abouticon" src="https://siphokuhlenyana.github.io/ImagesPortfolio/information.png" alt="" height="50px" ><br><span id="about">About</span></a>
+        <a href="#resumepage"><img id="eduicon" src="https://siphokuhlenyana.github.io/ImagesPortfolio/college.png" alt="" height="50px" ><br><span id="edu">Education & Experience</span></a>
+        <a href="#projectspage"><img id="projicon" src="https://siphokuhlenyana.github.io/ImagesPortfolio/layers.png" alt="" height="50px" ><br><span id="pro">Projects</span></a>
+        <a href="#contactme"><img id="emailicon" src="https://siphokuhlenyana.github.io/ImagesPortfolio/email.png" alt="" height="50px" ><br><span id="co">Contact</span></a>
+      
         <a class="navbar-brand" href="#"
           ><img
             id="logo"
@@ -11,12 +17,9 @@
             width="300px"
             height="200px"
         /></a>
-        <h1 id="hi">SIPHOKUHLE NYANA</h1>
-        <a href="#homepage" ><img id="homeicon" src="https://siphokuhlenyana.github.io/ImagesPortfolio/home.png" alt="" height="50px" ><br><span id="home">Home</span></a>
-        <a href="#aboutpage"><img id="abouticon" src="https://siphokuhlenyana.github.io/ImagesPortfolio/information.png" alt="" height="50px" ><br><span id="about">About</span></a>
-        <a href="#resumepage"><img id="eduicon" src="https://siphokuhlenyana.github.io/ImagesPortfolio/college.png" alt="" height="50px" ><br><span id="edu">Education & Experience</span></a>
-        <a href="#projectspage"><img id="projicon" src="https://siphokuhlenyana.github.io/ImagesPortfolio/layers.png" alt="" height="50px" ><br><span id="pro">Projects</span></a>
-        <a href="#contactme"><img id="emailicon" src="https://siphokuhlenyana.github.io/ImagesPortfolio/email.png" alt="" height="50px" ><br><span id="co">Contact</span></a>
+       
+        <h1 id="hi">SIPHOKUHLE NYANA</h1><br><br>
+       
         <!-- <button
           id="toogle"
           class="navbar-toggler"
@@ -86,10 +89,11 @@
 export default {};
 </script>
 <style >
-@media only screen and (max-width: 961px){
+
+/* @media only screen and (max-width: 961px){
   span{
     font-size:large;
-    font-weight:700;
+    /* font-weight:700;
     font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -100,9 +104,9 @@ export default {};
   #homeicon,#home{
   margin-right:10rem;
    /* margin-right: 10px; */ 
- }
+ 
 
-#abouticon,#about{
+/* #abouticon,#about{
   margin-left:-10rem;
 }
 #eduicon,#edu{
@@ -114,22 +118,24 @@ export default {};
  }
 #emailicon,#co{
   margin-left: -6rem;
-  margin-right: 1rem; 
+  margin-right: 1rem;  */
 
    /* #homeicon,#home{
     margin-left:-50px;
   }  */
-}
-}
+ */ */
+
 span{
   text-decoration: none;
   color:#fad0f9 ;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
+ 
 }
 a{
   text-decoration: none;
+  color:#fad0f9 ;
 }
 a:active{
   border-bottom: #fad0f9;
@@ -166,8 +172,10 @@ a:active{
   font-weight: 800;
   font-style: italic;
   /* margin: 10px 0; */
-  margin-right:6rem;
+  margin-right:2rem;
+  
 }
+
 #toogle {
   background-color: pink;
 }

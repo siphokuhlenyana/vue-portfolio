@@ -36,7 +36,7 @@ export default {
   font-weight: 600;
   font-style: normal;
   font-size:medium;
-  margin-left: -150px;
+  margin-left: -13px;
   
   }
   #ab{
@@ -90,8 +90,8 @@ export default {
   background: linear-gradient(#33051c);
     text-align: center;
     color: #fad0f9;
-    height: 110vh;
-    padding-top: 7%;
+    height: 120vh;
+    padding-top: 10%;
     padding-bottom: 50px;
     font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -103,10 +103,10 @@ export default {
 }
 #aboutdiv{
     height:180px;
-    margin-left:200px;
+    margin-left:180px;
     display:flex;
     justify-content: center;
-    gap: 160px;
+    gap: 100px;
     
   
   

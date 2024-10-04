@@ -84,7 +84,7 @@ export default {
   margin-bottom: 50px;
   border-color:#fad0f9;
   border-width: 4px;
-  margin-left:150px;
+  margin-left:100px;
   align-content: center;
   background-color: #33051cf9;
  

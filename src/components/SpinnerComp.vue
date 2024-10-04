@@ -1,7 +1,7 @@
 <template>
  
-    <div >
-     <div class="loader mx-auto"  :style="{paddingTop:'150px'}"></div> 
+    <div :style="{height:'1px',marginBottom:'1rem'}">
+     <div class="loader mx-auto"  :style="{paddingTop:'150px',marginBottom:'1rem'}"></div> 
      <!-- <img id="spinner" src="https://siphokuhlenyana.github.io/dlozify-pics/Dual%20Ball@1x-3.2s-200px-200px.gif" alt="" width="100px" height="200px"> -->
      <!-- <onBeforeMount/> -->
     </div>
@@ -66,6 +66,7 @@
   background: radial-gradient(circle closest-side at 50% 40%, 94%, #000);
   transform-origin: 50% 40%;
   animation: l25 2s  linear;
+  height: 
 }
 @keyframes l25 {
   100% {transform: rotate(1turn)}
