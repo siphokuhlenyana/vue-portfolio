@@ -4,7 +4,7 @@
   <div class="home" >
     <!-- <h1 id="hi">SIPHOKUHLE NYANA </h1> -->
    
-    >
+    ><h1 id="hi">SIPHOKUHLE NYANA</h1>
     <img
       id="kuhle"
       src="https://github.com/siphokuhlenyana/ImagesPortfolio/blob/main/MYPIC.jpg?raw=true"
@@ -17,6 +17,7 @@
         borderColor: '#33051c',
       }"
     />
+    
     <img
       id="sipho"
       src="https://github.com/siphokuhlenyana/ImagesPortfolio/blob/main/MYPIC.jpg?raw=true"
@@ -32,7 +33,7 @@
     />
     <!-- <img id="horoscope" src="https://pngimg.com/d/capricorn_PNG35.png" alt="" width="250px" height="150px"> -->
    
-  
+    
       <div
         id="text-intro"
         :style="{
@@ -43,7 +44,7 @@
           borderRadius: '10px ',
         }"
       > 
-        <h3 :style="{fontSize:'16px'}">
+        <h3 :style="{fontSize:'28px'}">
           Hi👋,<br />
           I am an Aspiring  Software Designer & Developer <br />have a look on my portfolio
           ...
@@ -96,13 +97,10 @@ export default {
     }
   },
   name: "HomeView",
-<<<<<<< HEAD
   components: {
     SpinnerComp
   },
-=======
  
->>>>>>> 4f818ee8349dbf5ba7a5c8655319fc5d64533ebb
  
   mounted() {
     // fetch data from API
@@ -119,7 +117,10 @@ export default {
 </script>
 
   <style scoped>
-
+#h1{
+  text-align: end;
+  background-color: rgba(128, 0, 128, 0.547);
+}
 
 
 .menu-button:hover + .menu-list {
@@ -186,6 +187,7 @@ h3{
  
   font-weight: 200;
   font-style: normal;
+  font-size: 28px;
   
 }
 

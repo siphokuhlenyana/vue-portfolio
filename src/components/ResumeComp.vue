@@ -7,18 +7,18 @@
         <!-- <h1 id="headedu"  :style="{marginTop:'10px'}">Education</h1>
         <button id="view" v-if="createView === false" @click="createViewIf()" :style="{width:'300px' ,height:'30px',borderRadius:'10%'}">View Description</button>
            <button id="hide" v-if="createView" @click="createViewIf()" :style="{width:'300px' ,height:'30px',borderRadius:'10%',marginTop:'50px'}">Hide Description </button> -->
-        <div id="data" :style="{marginLeft:'1rem'}">
+        <div id="data" :style="{marginLeft:'1rem'}" >
             <div id="education" v-for="education,  in educationData" :key="education.placeOfInstitution" :style="{borderWidth:'5px',borderColor:'#ff00ff',
                 borderStyle:'solid',borderRadius:'50%',
                 backgroundImage:'url(https://www.right-to-education.org/sites/right-to-education.org/files/rm373batch13-081_0.jpg)',backgroundRepeat:'no repeat',backgroundSize:'cover',marginLeft:'2rem'}">
-                    <h4 id="edu">{{education.placeOfInstitution}} </h4>
-                    <h3 id="year">{{education.year}}</h3>
+                    <h4 id="edu" :style="{fontWeight:'bold'}">{{education.placeOfInstitution}} </h4>
+                    <h3 id="year" :style="{fontWeight:'bold'}">{{education.year}}</h3>
             
            <div id="view"> 
             
                 <!-- <div v-show="createView" :style="{marginTop:'100px'}"> -->
                   <div  :style="{marginTop:'100px',width:'600px'}" >
-                <h5 :style="{width:'600px'}"> {{education.description}}</h5>
+                <p :style="{width:'600px',fontWeight:'bold'}"> {{education.description}}</p>
             </div>
             
         </div>
@@ -145,18 +145,15 @@ export default {
   font-style: normal;
   padding: 0;
   margin: 0;
-  margin-top: 4rem;
+  margin-top: 15rem;
   
   
 }
 #workExp{
-<<<<<<< HEAD
   /* font-family: "Poppins", sans-serif; */
   /* font-weight: 400; */
-=======
   font-family: "Poppins", sans-serif;
 
->>>>>>> 4f818ee8349dbf5ba7a5c8655319fc5d64533ebb
   font-style: normal;
   display: flex;
   justify-content: flex-start;
@@ -179,7 +176,6 @@ export default {
 }
 
 #education {
-<<<<<<< HEAD
   /* display: flex;
     justify-content: center; */
   width: 450px;
@@ -188,18 +184,17 @@ export default {
   /* text-align: center; */
   /* margin-top: 70px; */
   /* font-family: "Poppins", sans-serif; */
-=======
   
   width: 200px;
   height: 200px;
   color: #fad0f9;
  
   font-family: "Poppins", sans-serif;
->>>>>>> 4f818ee8349dbf5ba7a5c8655319fc5d64533ebb
   font-weight: 400;
   font-style: normal;
  margin-top: 3rem;
  margin-left: 30rem;
+ margin-bottom: 10rem;
 }
 @media only screen and (max-width: 961px) {
  #data{
@@ -216,30 +211,24 @@ export default {
  }
  #education{
     width:10%;
-<<<<<<< HEAD
     margin-right:-5rem;
     gap: 2px;
     /* margin-left:2rem; */
     /* padding-bottom:10rem; */
-  }
-=======
     margin-right:-10rem;
     gap: 1px;
+  }
  }
->>>>>>> 4f818ee8349dbf5ba7a5c8655319fc5d64533ebb
   #container{
     margin-left:0;
   }
-}
+
 @media (min-width:300px){
-<<<<<<< HEAD
  
-=======
   #education{
     width:40%;
     
   }
->>>>>>> 4f818ee8349dbf5ba7a5c8655319fc5d64533ebb
 }
 @media (min-width:300px){
 #edu,#year,#view{
@@ -259,12 +248,10 @@ export default {
     font-size: medium;
   }
 }
-<<<<<<< HEAD
 #data{
   width:400px;
   /* margin-bottom: 200rem; */
 }
-=======
 
  @media(max-width: 400px){
   #education{
@@ -278,7 +265,6 @@ export default {
  }
 
 
->>>>>>> 4f818ee8349dbf5ba7a5c8655319fc5d64533ebb
 @media (min-width: 1222px){
 #data{
 
@@ -294,7 +280,6 @@ export default {
 
 #data {
   display: grid;
-<<<<<<< HEAD
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   /* background-image: url('https://i.pinimg.com/originals/7d/d1/30/7dd1305bf92447d37e81c573440b2580.gif');
@@ -303,15 +288,12 @@ export default {
         width: 100%;
         height:100vh */
         /* margin-left: 800px; */
-=======
   grid-template-columns: repeat(2, 1fr);
   gap: 3rem;
  
   width:200px
   
->>>>>>> 4f818ee8349dbf5ba7a5c8655319fc5d64533ebb
 }
-
 #container {
 
   background-repeat: no-repeat;
@@ -362,14 +344,14 @@ export default {
 
 
 #view {
-<<<<<<< HEAD
   width: 500px;
   /* height: 300px; */
-=======
   width: 800px;
   border-radius:10%;
  
->>>>>>> 4f818ee8349dbf5ba7a5c8655319fc5d64533ebb
+  font-style: normal;
+  font-size: 18px;
+ 
   
 }
 
@@ -377,13 +359,10 @@ export default {
 #hide {
   border-left-color: black;
   color: #fad0f9;
-<<<<<<< HEAD
 
   /* width:250px; */
-=======
   background-color: #91074a;
   
->>>>>>> 4f818ee8349dbf5ba7a5c8655319fc5d64533ebb
 }
 
 #caro,

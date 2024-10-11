@@ -116,13 +116,10 @@ p{
         height:650px;
        
         padding-bottom: 150px;
-<<<<<<< HEAD
         padding-right:-80px;
         /* margin-left: 200px; */
-=======
         padding-right:-100px;
        
->>>>>>> 4f818ee8349dbf5ba7a5c8655319fc5d64533ebb
         font-weight: 500;
         margin-top:170px;
         padding-top: 4rem;
@@ -130,11 +127,8 @@ p{
        
     }
     .container{
-<<<<<<< HEAD
         height:140vh;
-=======
-        height:160vh;
->>>>>>> 4f818ee8349dbf5ba7a5c8655319fc5d64533ebb
+        height:140vh;
         background-color: #33051c;
        
         
@@ -144,18 +138,15 @@ p{
     font-style: normal;
         
     }
-<<<<<<< HEAD
     /* #thoughts{
         text-shadow:2px 2px pink ;
     } */
     /* .poppins-regular {
-=======
     img#location {
     margin-left: -1rem;
 }
    
     .poppins-regular {
->>>>>>> 4f818ee8349dbf5ba7a5c8655319fc5d64533ebb
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;

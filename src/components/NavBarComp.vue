@@ -11,12 +11,13 @@
             width="300px"
             height="200px"
         /></a>
-        <h1 id="hi">SIPHOKUHLE NYANA</h1>
-        <a href="#homepage" ><img id="homeicon" src="https://siphokuhlenyana.github.io/ImagesPortfolio/home.png" alt="" height="50px" ><br><span id="home">Home</span></a>
+              <a href="#homepage" ><img id="homeicon" src="https://siphokuhlenyana.github.io/ImagesPortfolio/home.png" alt="" height="50px" ><br><span id="home">Home</span></a>
         <a href="#aboutpage"><img id="abouticon" src="https://siphokuhlenyana.github.io/ImagesPortfolio/information.png" alt="" height="50px" ><br><span id="about">About</span></a>
         <a href="#resumepage"><img id="eduicon" src="https://siphokuhlenyana.github.io/ImagesPortfolio/college.png" alt="" height="50px" ><br><span id="edu">Education & Experience</span></a>
         <a href="#projectspage"><img id="projicon" src="https://siphokuhlenyana.github.io/ImagesPortfolio/layers.png" alt="" height="50px" ><br><span id="pro">Projects</span></a>
         <a href="#contactme"><img id="emailicon" src="https://siphokuhlenyana.github.io/ImagesPortfolio/email.png" alt="" height="50px" ><br><span id="co">Contact</span></a>
+       
+  
         <!-- <button
           id="toogle"
           class="navbar-toggler"
@@ -80,6 +81,7 @@
       </div> -->
     </div>
     </nav>
+    
   </div>
 </template>
 <script>
@@ -95,7 +97,8 @@ export default {};
   font-style: normal;
   }
   #hi{
-    margin-right:6rem;
+    /* display: flex; */
+    justify-self: end;
   }
   #homeicon,#home{
   margin-right:10rem;
@@ -150,7 +153,7 @@ span{
 
 a{
   text-decoration: none;
-  font-size: xx-large;
+  font-size: x-large;
 }
 a:active{
   border-bottom: #fad0f9;
