@@ -63,14 +63,12 @@ export default {
     /* font-family: "Poppins", sans-serif; */
   font-weight: 400;
   font-style: normal;
-  /* margin: 0; */
+  
 
 }
 #aboutimg{
     width: 800px;
-    /* display: flex;
-    justify-content: center;
-    align-items:center; */
+    
     height: 450px;
 
     position: relative;
@@ -86,7 +84,7 @@ export default {
       transform: rotateY(0deg);
     }
     50% {
-      /* left: calc(100% - 100px); */
+      
       transform: rotateY(180deg);
     }
     98% {
@@ -101,7 +99,7 @@ export default {
     
 
 .container{
-  /* background-color: ; */
+  
   background-color:#33051c ;
   background: linear-gradient(#33051c);
     text-align: center;
@@ -116,8 +114,7 @@ export default {
  
   display:grid;
   grid-template-columns: repeat(2,1fr );
-  /* margin-left:25px; */
-  /* padding-left: 0; */
+  
 }
 #aboutdiv{
     height:180px;

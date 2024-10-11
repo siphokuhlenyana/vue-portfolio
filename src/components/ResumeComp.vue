@@ -150,12 +150,17 @@ export default {
   
 }
 #workExp{
+<<<<<<< HEAD
   /* font-family: "Poppins", sans-serif; */
   /* font-weight: 400; */
+=======
+  font-family: "Poppins", sans-serif;
+
+>>>>>>> 4f818ee8349dbf5ba7a5c8655319fc5d64533ebb
   font-style: normal;
   display: flex;
   justify-content: flex-start;
-  /* margin-left: 104px; */
+ 
   
 }
 #headedu{
@@ -172,10 +177,9 @@ export default {
   display: grid;
   grid-template-columns: repeat (2, 1fr);
 }
-/* #skool{
-  width:400px;
-} */
+
 #education {
+<<<<<<< HEAD
   /* display: flex;
     justify-content: center; */
   width: 450px;
@@ -184,6 +188,14 @@ export default {
   /* text-align: center; */
   /* margin-top: 70px; */
   /* font-family: "Poppins", sans-serif; */
+=======
+  
+  width: 200px;
+  height: 200px;
+  color: #fad0f9;
+ 
+  font-family: "Poppins", sans-serif;
+>>>>>>> 4f818ee8349dbf5ba7a5c8655319fc5d64533ebb
   font-weight: 400;
   font-style: normal;
  margin-top: 3rem;
@@ -204,17 +216,30 @@ export default {
  }
  #education{
     width:10%;
+<<<<<<< HEAD
     margin-right:-5rem;
     gap: 2px;
     /* margin-left:2rem; */
     /* padding-bottom:10rem; */
   }
+=======
+    margin-right:-10rem;
+    gap: 1px;
+ }
+>>>>>>> 4f818ee8349dbf5ba7a5c8655319fc5d64533ebb
   #container{
-    margin-left:0
+    margin-left:0;
   }
 }
 @media (min-width:300px){
+<<<<<<< HEAD
  
+=======
+  #education{
+    width:40%;
+    
+  }
+>>>>>>> 4f818ee8349dbf5ba7a5c8655319fc5d64533ebb
 }
 @media (min-width:300px){
 #edu,#year,#view{
@@ -234,10 +259,26 @@ export default {
     font-size: medium;
   }
 }
+<<<<<<< HEAD
 #data{
   width:400px;
   /* margin-bottom: 200rem; */
 }
+=======
+
+ @media(max-width: 400px){
+  #education{
+    margin-bottom:250px;
+  }
+  #ski{
+    margin-top:30rem;
+    height:130vh;
+  
+  }
+ }
+
+
+>>>>>>> 4f818ee8349dbf5ba7a5c8655319fc5d64533ebb
 @media (min-width: 1222px){
 #data{
 
@@ -253,6 +294,7 @@ export default {
 
 #data {
   display: grid;
+<<<<<<< HEAD
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   /* background-image: url('https://i.pinimg.com/originals/7d/d1/30/7dd1305bf92447d37e81c573440b2580.gif');
@@ -261,18 +303,25 @@ export default {
         width: 100%;
         height:100vh */
         /* margin-left: 800px; */
+=======
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+ 
+  width:200px
+  
+>>>>>>> 4f818ee8349dbf5ba7a5c8655319fc5d64533ebb
 }
 
 #container {
-  /* background-image: url("https://siphokuhlenyana.github.io/Vue_projectImages/moonwalk.gif"); */
+
   background-repeat: no-repeat;
   background-size: cover;
   width: 59%;
   height: 80vh;
   color: #fad0f9;
-  /* background-color:#91074a; */
+ 
   border-radius: 10%;
-  /* margin-top: 3%; */
+  
   padding-top: 10px;
   /* font-family: "Poppins", sans-serif; */
   font-weight: 400;
@@ -283,10 +332,9 @@ export default {
 #skills {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* display: flex;
-  flex-direction: row; */
+ 
   gap: 20px;
-  /* background-color: #91074a; */
+  
   color: black;
   width: 100%;
   /* font-family: "Poppins", sans-serif; */
@@ -311,15 +359,17 @@ export default {
 
 }
 
-/* #agile {
-  display: flex;
-  justify-content: center;
-  margin-top: 200px;
-} */
+
 
 #view {
+<<<<<<< HEAD
   width: 500px;
   /* height: 300px; */
+=======
+  width: 800px;
+  border-radius:10%;
+ 
+>>>>>>> 4f818ee8349dbf5ba7a5c8655319fc5d64533ebb
   
 }
 
@@ -327,8 +377,13 @@ export default {
 #hide {
   border-left-color: black;
   color: #fad0f9;
+<<<<<<< HEAD
 
   /* width:250px; */
+=======
+  background-color: #91074a;
+  
+>>>>>>> 4f818ee8349dbf5ba7a5c8655319fc5d64533ebb
 }
 
 #caro,
