@@ -80,5 +80,10 @@ export default {
     a{
       color:#c72f78;
     }
+    .poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+    }
  
 </style>

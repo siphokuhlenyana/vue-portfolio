@@ -10,11 +10,11 @@
         <div id="data" :style="{marginLeft:'1rem'}">
             <div id="education" v-for="education,  in educationData" :key="education.placeOfInstitution" :style="{borderWidth:'5px',borderColor:'#ff00ff',
                 borderStyle:'solid',borderRadius:'50%',
-                backgroundImage:'url(https://www.right-to-education.org/sites/right-to-education.org/files/rm373batch13-081_0.jpg)',backgroundRepeat:'no repeat',backgroundSize:'cover'}">
+                backgroundImage:'url(https://www.right-to-education.org/sites/right-to-education.org/files/rm373batch13-081_0.jpg)',backgroundRepeat:'no repeat',backgroundSize:'cover',marginLeft:'2rem'}">
                     <h4 id="edu">{{education.placeOfInstitution}} </h4>
                     <h3 id="year">{{education.year}}</h3>
             
-           <div id="view"  >
+           <div id="view"> 
             
                 <!-- <div v-show="createView" :style="{marginTop:'100px'}"> -->
                   <div  :style="{marginTop:'100px',width:'600px'}" >
@@ -30,14 +30,14 @@
         </div>
       </div>
     
-      <div id="ski" :style="{width:'600px',height:'130vh',borderRadius:'10%'}" >
-        <h1 class="display-2 mx-auto" :style="{color:'#fad0f9',marginTop:'30px',paddingBottom:'15px',paddingRight:'100px'}">
+      <div id="ski" :style="{width:'600px',height:'108vh',borderRadius:'10%'}" >
+        <h1 class="display-2 mx-auto" :style="{color:'#fad0f9',marginTop:'10px',paddingBottom:'15px',paddingRight:'100px'}">
         <div id="indication"><h2 :style="{color:'#ff00ff',marginTop:'10px',marginRight:'1rem'}">   <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-chat-quote" viewBox="0 0 16 16">
   <path d="M2.678 11.894a1 1 0 0 1 .287.801 11 11 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8 8 0 0 0 8 14c3.996 0 7-2.807 7-6s-3.004-6-7-6-7 2.808-7 6c0 1.468.617 2.83 1.678 3.894m-.493 3.905a22 22 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a10 10 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9 9 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105"/>
   <path d="M7.066 6.76A1.665 1.665 0 0 0 4 7.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 0 0 .6.58c1.486-1.54 1.293-3.214.682-4.112zm4 0A1.665 1.665 0 0 0 8 7.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 0 0 .6.58c1.486-1.54 1.293-3.214.682-4.112z"/>
 </svg> Soft Skills </h2><h2 :style="{color:'#fad0f9',marginTop:'10px'}"> Hard Skills</h2></div></h1>
      
-        <div id="skill" :style="{width:'50px',height:'450px',marginLeft:'120px'}">
+        <div id="skill" :style="{width:'50px',height:'450px',marginLeft:'200px'}">
         <div id="skills" v-for="skill in skillsData" :key="skill.name"
         :style="{borderBottomColor:skill.type =='soft'? '#ff00ff':'#fad0f9',borderBottomStyle:'solid',marginLeft:'4rem',paddingBottom:'1rem',borderBottomWidth:'3px'}">
             <img :src="skill.image" width="200px" height="80px" :style="{borderColor:'#91074a',borderWidth:'3px',borderStyle:'dotted',borderRadius:'50%'}">
@@ -130,28 +130,27 @@ export default {
   color: #fad0f9;
 }
 #but{
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
   font-weight: 400;
   font-style: normal;
 }
 .carousel-item{
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
   font-weight: 400;
   font-style: normal;
 }
 #ski{
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
   font-weight: 400;
   font-style: normal;
   padding: 0;
   margin: 0;
-  margin-top: 20rem;
-  
+  margin-top: 4rem;
   
   
 }
 #workExp{
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
   /* font-weight: 400; */
   font-style: normal;
   display: flex;
@@ -160,12 +159,12 @@ export default {
   
 }
 #headedu{
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
   font-weight: 400;
   font-style: normal;
 }
 #resume{
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
   font-weight: 400;
   font-style: normal;
 }
@@ -179,18 +178,16 @@ export default {
 #education {
   /* display: flex;
     justify-content: center; */
-  width: 200px;
+  width: 450px;
   height: 200px;
   color: #fad0f9;
   /* text-align: center; */
   /* margin-top: 70px; */
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
   font-weight: 400;
   font-style: normal;
  margin-top: 3rem;
- margin-right: 2rem;
- margin-bottom: 10rem;
- 
+ margin-left: 30rem;
 }
 @media only screen and (max-width: 961px) {
  #data{
@@ -207,8 +204,8 @@ export default {
  }
  #education{
     width:10%;
-    margin-right:-10rem;
-    gap: 1px;
+    margin-right:-5rem;
+    gap: 2px;
     /* margin-left:2rem; */
     /* padding-bottom:10rem; */
   }
@@ -217,10 +214,7 @@ export default {
   }
 }
 @media (min-width:300px){
-  #education{
-    width:40%;
-    /* padding-bottom:10rem; */
-  }
+ 
 }
 @media (min-width:300px){
 #edu,#year,#view{
@@ -240,21 +234,10 @@ export default {
     font-size: medium;
   }
 }
-/* #data{
+#data{
   width:400px;
   /* margin-bottom: 200rem; */
- @media(max-width: 400px){
-  #education{
-    margin-bottom:250px;
-  }
-  #ski{
-    margin-top:30rem;
-    height:130vh;
-  
-  }
- }
-
-
+}
 @media (min-width: 1222px){
 #data{
 
@@ -270,10 +253,8 @@ export default {
 
 #data {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 3rem;
- 
-  width:200px
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
   /* background-image: url('https://i.pinimg.com/originals/7d/d1/30/7dd1305bf92447d37e81c573440b2580.gif');
         background-repeat: no-repeat;
         background-size: cover;
@@ -293,7 +274,7 @@ export default {
   border-radius: 10%;
   /* margin-top: 3%; */
   padding-top: 10px;
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
   font-weight: 400;
   font-style: normal;
   margin-left:149px;
@@ -308,12 +289,11 @@ export default {
   /* background-color: #91074a; */
   color: black;
   width: 100%;
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
   font-weight: 400;
   font-style: normal;
   margin-right:2px;
   margin-left:10px;
-  margin-bottom:2rem;
   
 
 }
@@ -322,14 +302,13 @@ export default {
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   margin-right:2rem ;
- 
 }
 
 
 #indication {
   display: flex;
   justify-content: flex-end;
-padding-top: 2rem;
+
 }
 
 /* #agile {
@@ -339,8 +318,7 @@ padding-top: 2rem;
 } */
 
 #view {
-  width: 800px;
-  border-radius:10%;
+  width: 500px;
   /* height: 300px; */
   
 }
@@ -349,7 +327,7 @@ padding-top: 2rem;
 #hide {
   border-left-color: black;
   color: #fad0f9;
-  background-color: #91074a;
+
   /* width:250px; */
 }
 
@@ -368,9 +346,9 @@ padding-top: 2rem;
   padding-top: 100px;
  
 }
-.poppins-regular {
+/* .poppins-regular {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
-}
+} */
 </style>

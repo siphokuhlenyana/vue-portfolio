@@ -7,6 +7,7 @@
             <!-- <img src="https://siphokuhlenyana.github.io/ImagesPortfolio/rhombus.png" alt=""> -->
            
    <p :style="{width:'1000px',marginTop:'6rem'}">{{aboutMe}}</p></div>
+    <div class="box"></div>
         </div>
        
               
@@ -14,6 +15,7 @@
     </div>
 </template>
 <script>
+
 export default {
     computed:{
        
@@ -30,13 +32,27 @@ export default {
 
 </script>
 <style scoped>
+.box {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px; /* adjust the height of the box */
+  background-color: #fff;
+  transform: translateY(100%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.container:hover .box {
+  transform: translateY(0);
+}
+
+
 @media only screen and (max-width: 961px){
   p{
-    font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-  font-size:medium;
-  margin-left: -13px;
+   
+  
+  margin-left: -150px;
   
   }
   #ab{
@@ -44,7 +60,7 @@ export default {
   }
 }
 #about{
-    font-family: "Poppins", sans-serif;
+    /* font-family: "Poppins", sans-serif; */
   font-weight: 400;
   font-style: normal;
   /* margin: 0; */
@@ -57,7 +73,7 @@ export default {
     align-items:center; */
     height: 450px;
 
-    
+    position: relative;
     animation:alternate-reverse;
     animation-name: run;
     animation-duration: 1s linear infinite;
@@ -90,12 +106,14 @@ export default {
   background: linear-gradient(#33051c);
     text-align: center;
     color: #fad0f9;
-    height: 120vh;
-    padding-top: 10%;
+    height: 110vh;
+    padding-top: 7%;
     padding-bottom: 50px;
-    font-family: "Poppins", sans-serif;
+    /* font-family: "Poppins", sans-serif;
   font-weight: 400;
-  font-style: normal;
+  font-style: normal; */
+  font-size: 20px !important;
+ 
   display:grid;
   grid-template-columns: repeat(2,1fr );
   /* margin-left:25px; */
@@ -103,13 +121,18 @@ export default {
 }
 #aboutdiv{
     height:180px;
-    margin-left:180px;
+    margin-left:200px;
     display:flex;
     justify-content: center;
-    gap: 100px;
+    gap: 160px;
     
   
   
 }
-
+/* .poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+ 
+    } */
 </style>

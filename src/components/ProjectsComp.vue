@@ -44,7 +44,7 @@ export default {
   }
 }
 .card-body{
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
   font-weight: 400;
   font-style: normal; 
   transition: all 0.3s ease-in-out;
@@ -53,11 +53,11 @@ export default {
 .card-body:hover{
   box-shadow: 16px 16px 25px 25px #fa5ee2;
 }
-#assign{
+/* #assign{
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
-}
+} */
 #projects {
   background-color: #33051cf9;
   background-clip: border-box;
@@ -65,9 +65,9 @@ export default {
 #prod {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif;
   font-weight: 400;
-  font-style: normal;
+  font-style: normal; */
   
 }
 
@@ -84,7 +84,7 @@ export default {
   margin-bottom: 50px;
   border-color:#fad0f9;
   border-width: 4px;
-  margin-left:100px;
+  margin-left:150px;
   align-content: center;
   background-color: #33051cf9;
  
@@ -103,9 +103,9 @@ export default {
  width :2px;
 }
 
-.poppins-regular {
+/* .poppins-regular {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
-}
+} */
 </style>
