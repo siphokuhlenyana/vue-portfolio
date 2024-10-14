@@ -1,6 +1,7 @@
 <template>
     <div class="container">
-        <div id="ab" ><h2 class="display-2 d-flex justify-content start " id="about" :style="{color:'#fad0f9',borderLeftColor:'#bb0761e7',borderLeftStyle:'solid',borderLeftWidth:'4px',borderLeftSize:'20px'}">About</h2>
+        <div id="ab" >
+          <h2 class="display-2 d-flex justify-content start " id="about" :style="{color:'#fad0f9',borderLeftColor:'#bb0761e7',borderLeftStyle:'solid',borderLeftWidth:'4px',borderLeftSize:'20px'}">About</h2>
             <div id="aboutdiv">
             
     <img  id="aboutimg" src="https://siphokuhlenyana.github.io/Vue_projectImages/20240422_122000.jpg" alt="" :style="{paddingBottom:'20px',marginTop:'2rem' ,borderRadius:'10%'}">
