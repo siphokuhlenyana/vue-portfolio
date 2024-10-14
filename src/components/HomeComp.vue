@@ -4,7 +4,7 @@
   <div class="home" >
     <!-- <h1 id="hi">SIPHOKUHLE NYANA </h1> -->
    
-    ><h1 id="hi">SIPHOKUHLE NYANA</h1>
+    <h1 id="hi">SIPHOKUHLE NYANA</h1>
     <img
       id="kuhle"
       src="https://github.com/siphokuhlenyana/ImagesPortfolio/blob/main/MYPIC.jpg?raw=true"

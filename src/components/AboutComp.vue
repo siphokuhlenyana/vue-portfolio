@@ -52,11 +52,11 @@ export default {
   p{
    
   
-  margin-left: -150px;
+  margin-left: -100px;
   
   }
   #ab{
-    height:400vh;
+    height:500vh;
   }
 }
 #about{
@@ -104,8 +104,8 @@ export default {
   background: linear-gradient(#33051c);
     text-align: center;
     color: #fad0f9;
-    height: 110vh;
-    padding-top: 7%;
+    height: 120vh;
+    padding-top: 4%;
     padding-bottom: 50px;
     /* font-family: "Poppins", sans-serif;
   font-weight: 400;
