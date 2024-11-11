@@ -62,6 +62,7 @@ export default {
 #prod {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
   /* font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal; */
@@ -73,9 +74,17 @@ export default {
     transition:all ease-in-out 0.5;
  
   background-color:  #33051c;
+ 
   
   
 }
+@media  (max-width:329px) {
+  #prod{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 .card{
   margin-bottom: 50px;
   border-color:#fad0f9;

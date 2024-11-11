@@ -27,10 +27,10 @@
         
     </div>
     <div id='Cert'>
-     <img id='agile' src="https://siphokuhlenyana.github.io/Vue_projectImages/Screenshot%202024-06-25%20092556.png" width='200px' height='150px'>  
-     <img id='agile' src="https://siphokuhlenyana.github.io/ImagesPortfolio/Screenshot%202024-11-11%20130244.png" width='200px' height='150px'> 
-     <img id='agile' src="https://siphokuhlenyana.github.io/ImagesPortfolio/Screenshot%202024-11-11%20131847.png" width='200px' height='150px'> 
-    <a href ="https://drive.google.com/drive/u/0/folders/1gJB0TnUjKrQsfS1kOXlZTl77AZI38evK" ><img id='agile' src="https://siphokuhlenyana.github.io/ImagesPortfolio/vision.png" width='200px' height='80px'></a>
+     <img id='agile' src="https://siphokuhlenyana.github.io/Vue_projectImages/Screenshot%202024-06-25%20092556.png" width='300px' height='150px'>  
+     <img id='agile' src="https://siphokuhlenyana.github.io/ImagesPortfolio/Screenshot%202024-11-11%20130244.png" width='300px' height='150px'> 
+     <img id='agile' src="https://siphokuhlenyana.github.io/ImagesPortfolio/Screenshot%202024-11-11%20131847.png" width='300px' height='150px'> 
+    <a href ="https://drive.google.com/drive/u/0/folders/1gJB0TnUjKrQsfS1kOXlZTl77AZI38evK" ><img id='see' src="https://siphokuhlenyana.github.io/ImagesPortfolio/vision.png" width='200px' height='80px'></a>
     </div>
        <!-- <img id='agile' src="https://siphokuhlenyana.github.io/Vue_projectImages/Screenshot%202024-06-25%20092556.png" width='300px' height='300px'>      -->
         </div>
@@ -132,10 +132,27 @@ export default {
 };
 </script>
 <style scoped>
+#see {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+#see {
+    width: 100px; 
+    height: auto; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#see:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 4px 20px rgba(117, 17, 72, 0.2); 
+}
 #Cert{
   display: grid;
   grid-template-columns: repeat(2,1fr);
-  margin-right: 20rem;
+  margin-right: 30rem;
+  gap: 20px;
+  
 }
 #name,#level{
   color: #fad0f9;
