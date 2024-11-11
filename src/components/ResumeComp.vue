@@ -84,7 +84,7 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
-<a href="https://siphokuhlenyana.github.io/ImagesPortfolio/updated%20Cv-Siphokuhle.pdf" download> <button id="but"
+<a href="https://siphokuhlenyana.github.io/ImagesPortfolio/Siphokuhle%20Nyana%20-%20Resume.pdf" download> <button id="but"
       type="button"
       class="btn btn-outline-secondary"
       :style="{ backgroundColor: '#fa5ee2',textDecoration:'none',paddingRight:'5px',paddingLeft:'5px',color:'#fad0f9' }"
