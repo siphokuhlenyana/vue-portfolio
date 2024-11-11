@@ -26,6 +26,12 @@
         
         
     </div>
+    <div id='Cert'>
+     <img id='agile' src="https://siphokuhlenyana.github.io/Vue_projectImages/Screenshot%202024-06-25%20092556.png" width='200px' height='150px'>  
+     <img id='agile' src="https://siphokuhlenyana.github.io/ImagesPortfolio/Screenshot%202024-11-11%20130244.png" width='200px' height='150px'> 
+     <img id='agile' src="https://siphokuhlenyana.github.io/ImagesPortfolio/Screenshot%202024-11-11%20131847.png" width='200px' height='150px'> 
+    <a href ="https://drive.google.com/drive/u/0/folders/1gJB0TnUjKrQsfS1kOXlZTl77AZI38evK" ><img id='agile' src="https://siphokuhlenyana.github.io/ImagesPortfolio/vision.png" width='200px' height='80px'></a>
+    </div>
        <!-- <img id='agile' src="https://siphokuhlenyana.github.io/Vue_projectImages/Screenshot%202024-06-25%20092556.png" width='300px' height='300px'>      -->
         </div>
       </div>
@@ -84,7 +90,7 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
-<a href="https://siphokuhlenyana.github.io/ImagesPortfolio/Siphokuhle%20Nyana%20-%20Resume.pdf" download> <button id="but"
+<a href="https://siphokuhlenyana.github.io/ImagesPortfolio/Siphokuhle%20Nyana%20-%20Resume.pdf" download target= 'blank'> <button id="but"
       type="button"
       class="btn btn-outline-secondary"
       :style="{ backgroundColor: '#fa5ee2',textDecoration:'none',paddingRight:'5px',paddingLeft:'5px',color:'#fad0f9' }"
@@ -126,6 +132,11 @@ export default {
 };
 </script>
 <style scoped>
+#Cert{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  margin-right: 20rem;
+}
 #name,#level{
   color: #fad0f9;
 }
