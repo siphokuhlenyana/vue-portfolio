@@ -23,9 +23,9 @@
     <label for="Surname" >Surname:</label><br><br>
     <input type="text" id="lname" name="Surname" value="" required><br><br>
     <label for="Message" >Message:</label><br><br>
-    <textarea name="Message"  id="message" value="" required  placeholder="Your enquiry" ></textarea><br><br>
+    <textarea name="Message"  id="message" value="" required  placeholder="Your enquiry" :style="{color:'#fa5ee2'}"></textarea><br><br>
     <label for="appo">Set Appointment:</label><br><br>
-    <input type="date" id="appoD" name="appoD" value="" ><br><br>
+    <input type="date" id="appoD" name="appoD" value="" :style="{color:'#fa5ee2'}" ><br><br>
 
 
     <input type="submit" value="Send" id="submit">
